@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Luxury Estates | Pemium Land Properties</title>
+    <title>ProDev Real Estate | Pemium Land Properties</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script>
@@ -122,6 +122,7 @@
             transform: translateY(0);
         }
         
+        
         @keyframes float {
             0% { transform: translateY(0px); }
             50% { transform: translateY(-10px); }
@@ -130,7 +131,23 @@
         
         .floating {
             animation: float 3s ease-in-out infinite;
+            
         }
+        @keyframes zoomIn {
+         from {
+         transform: scale(0.8);
+         opacity: 0;
+        }
+        to {
+         transform: scale(1);
+            opacity: 1;
+             }
+}
+
+.animate-zoom {
+  animation: zoomIn 0.3s ease-out forwards;
+}
+
     </style>
 </head>
 <body class="bg-dark-900">
@@ -141,7 +158,7 @@
                 <div class="flex items-center">
                     <div class="flex-shrink-0 flex items-center">
                         <i class="fas fa-building text-gold-600 text-2xl mr-2"></i>
-                        <span class="text-xl font-bold text-white heading-font">CMJ<span class="gold-gradient-text">ESTATES</span></span>
+                        <span class="text-xl font-bold text-white heading-font">ProDev<span class="gold-gradient-text"> REAL ESTATE</span></span>
                     </div>
                 </div>
                 <div class="hidden md:block">
@@ -192,7 +209,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="md:w-1/2 animate-slide-up">//youtube embed
+                <div class="md:w-1/2 animate-slide-up">
                     <div class="video-container rounded-xl overflow-hidden shadow-2xl border-2 border-gold-600/30">
                         <iframe src="https://www.youtube.com/embed/2xmYosOM4jE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
@@ -238,7 +255,7 @@
                         <div class="flex justify-between items-center">
                             <div>
                                 <p class="text-gray-400 text-sm">Starting from</p>
-                                <p class="text-gold-500 text-xl font-bold"> ₱2,500 PER SQM</p>
+                                <p class="text-gold-500 text-xl font-bold"> ₱1,500-2,500 PER SQM</p>
                             </div>
                             <div class="text-right">
                                 <p class="text-gray-400 text-sm">Lot Size</p>
@@ -269,7 +286,7 @@
                         <div class="flex justify-between items-center">
                             <div>
                                 <p class="text-gray-400 text-sm">Starting from</p>
-                                <p class="text-gold-500 text-xl font-bold">$180,000</p>
+                                <p class="text-gold-500 text-xl font-bold">₱180,000</p>
                             </div>
                             <div class="text-right">
                                 <p class="text-gray-400 text-sm">Lot Size</p>
@@ -300,7 +317,7 @@
                         <div class="flex justify-between items-center">
                             <div>
                                 <p class="text-gray-400 text-sm">Starting from</p>
-                                <p class="text-gold-500 text-xl font-bold">$450,000</p>
+                                <p class="text-gold-500 text-xl font-bold">₱450,000</p>
                             </div>
                             <div class="text-right">
                                 <p class="text-gray-400 text-sm">Lot Size</p>
@@ -313,12 +330,6 @@
             
             <div class="text-center mt-12">
                 <a href="#" class="inline-flex items-center text-gold-400 hover:text-gold-300 font-medium">
-                    View All Properties
-                    <i class="fas fa-arrow-right ml-2"></i>
-                </a>
-            </div>
-        </div>
-    </section>
 
     <!-- About Section -->
     <section id="about" class="py-16 bg-dark-900 relative">
@@ -326,11 +337,11 @@
             <div class="md:flex items-center">
                 <div class="md:w-1/2 mb-12 md:mb-0 md:pr-12 animate-fade-in">
                     <h2 class="text-3xl md:text-4xl font-bold text-white mb-6 heading-font">
-                        About <span class="gold-gradient-text">Luxury Estates</span>
+                        About <span class="gold-gradient-text">ProDev Real Estate</span>
                     </h2>
                     <div class="w-24 h-1 bg-gold-600 mb-6"></div>
                     <p class="text-gray-400 mb-6">
-                        Luxury Estates is a premier real estate firm specializing in high-value land properties. With over 15 years of experience, we've helped hundreds of clients find their perfect investment opportunities.
+                        ProDev Real Estate is a premier real estate firm specializing in high-value land properties. With over 15 years of experience, we've helped hundreds of clients find their perfect investment opportunities.
                     </p>
                     <p class="text-gray-400 mb-8">
                         Our portfolio includes premium subdivided lots, portion lands, and untouched plain lands in the most sought-after locations across the country. We pride ourselves on our integrity, market knowledge, and commitment to client satisfaction.
@@ -396,7 +407,7 @@
                 </h2>
                 <div class="w-24 h-1 bg-gold-600 mx-auto mb-6"></div>
                 <p class="text-gray-400 max-w-2xl mx-auto">
-                    Hear what our clients say about their experience with Luxury Estates
+                    Hear what our clients say about their experience with ProDev Real Estate
                 </p>
             </div>
             
@@ -413,7 +424,7 @@
                     </div>
                     <div class="text-gray-400 mb-4">
                         <i class="fas fa-quote-left text-gold-600/30 mr-2"></i>
-                        Luxury Estates helped me find the perfect parcel for my vacation home. Their knowledge of the local market was invaluable.
+                        ProDev Real Estate helped me find the perfect parcel for my vacation home. Their knowledge of the local market was invaluable.
                     </div>
                     <div class="flex text-gold-500">
                         <i class="fas fa-star"></i>
@@ -436,7 +447,7 @@
                     </div>
                     <div class="text-gray-400 mb-4">
                         <i class="fas fa-quote-left text-gold-600/30 mr-2"></i>
-                        The subdivided lots we purchased through Luxury Estates have appreciated significantly. Their team provided excellent guidance.
+                        The subdivided lots we purchased through ProDev Real Estate have appreciated significantly. Their team provided excellent guidance.
                     </div>
                     <div class="flex text-gold-500">
                         <i class="fas fa-star"></i>
@@ -507,109 +518,43 @@
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
                 <div class="animate-fade-in">
                     <form class="space-y-6">
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                            <div>
-                                <label for="first-name" class="block text-sm font-medium text-gray-300 mb-1">First Name</label>
-                                <input type="text" id="first-name" class="w-full px-4 py-3 bg-dark-700 border border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-gold-600 focus:border-transparent text-white placeholder-gray-500" placeholder="John">
-                            </div>
-                            <div>
-                                <label for="last-name" class="block text-sm font-medium text-gray-300 mb-1">Last Name</label>
-                                <input type="text" id="last-name" class="w-full px-4 py-3 bg-dark-700 border border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-gold-600 focus:border-transparent text-white placeholder-gray-500" placeholder="Doe">
-                            </div>
-                        </div>
-                        <div>
-                            <label for="email" class="block text-sm font-medium text-gray-300 mb-1">Email</label>
-                            <input type="email" id="email" class="w-full px-4 py-3 bg-dark-700 border border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-gold-600 focus:border-transparent text-white placeholder-gray-500" placeholder="john@example.com">
-                        </div>
-                        <div>
-                            <label for="phone" class="block text-sm font-medium text-gray-300 mb-1">Phone</label>
-                            <input type="tel" id="phone" class="w-full px-4 py-3 bg-dark-700 border border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-gold-600 focus:border-transparent text-white placeholder-gray-500" placeholder="(123) 456-7890">
-                        </div>
-                        <div>
-                            <label for="message" class="block text-sm font-medium text-gray-300 mb-1">Message</label>
-                            <textarea id="message" rows="4" class="w-full px-4 py-3 bg-dark-700 border border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-gold-600 focus:border-transparent text-white placeholder-gray-500" placeholder="Your message..."></textarea>
-                        </div>
-                        <div>
-                            <button type="submit" class="w-full bg-gold-700 hover:bg-gold-600 text-white px-6 py-3 rounded-md font-medium transition duration-300">
-                                Send Message
-                            </button>
-                        </div>
-                    </form>
-                </div>
-                
-                <div class="animate-slide-up">
-                    <div class="bg-dark-800 p-8 rounded-xl h-full border border-gold-800/20">
-                        <h3 class="text-xl font-bold text-white mb-6 heading-font">Our Information</h3>
-                        <div class="space-y-6">
-                            <div class="flex items-start">
-                                <div class="flex-shrink-0 mt-1">
-                                    <div class="flex items-center justify-center h-10 w-10 rounded-full bg-gold-700 text-gold-200">
-                                        <i class="fas fa-map-marker-alt"></i>
-                                    </div>
-                                </div>
-                                <div class="ml-4">
-                                    <p class="text-gray-400 font-medium">Address</p>
-                                    <p class="text-gray-300">123 Luxury Lane, Beverly Hills, CA 90210</p>
-                                </div>
-                            </div>
-                            <div class="flex items-start">
-                                <div class="flex-shrink-0 mt-1">
-                                    <div class="flex items-center justify-center h-10 w-10 rounded-full bg-gold-700 text-gold-200">
-                                        <i class="fas fa-phone-alt"></i>
-                                    </div>
-                                </div>
-                                <div class="ml-4">
-                                    <p class="text-gray-400 font-medium">Phone</p>
-                                    <p class="text-gray-300">+1 (310) 555-1234</p>
-                                </div>
-                            </div>
-                            <div class="flex items-start">
-                                <div class="flex-shrink-0 mt-1">
-                                    <div class="flex items-center justify-center h-10 w-10 rounded-full bg-gold-700 text-gold-200">
-                                        <i class="fas fa-envelope"></i>
-                                    </div>
-                                </div>
-                                <div class="ml-4">
-                                    <p class="text-gray-400 font-medium">Email</p>
-                                    <p class="text-gray-300">info@luxuryestates.com</p>
-                                </div>
-                            </div>
-                            <div class="flex items-start">
-                                <div class="flex-shrink-0 mt-1">
-                                    <div class="flex items-center justify-center h-10 w-10 rounded-full bg-gold-700 text-gold-200">
-                                        <i class="fas fa-clock"></i>
-                                    </div>
-                                </div>
-                                <div class="ml-4">
-                                    <p class="text-gray-400 font-medium">Hours</p>
-                                    <p class="text-gray-300">Monday - Friday: 9am - 6pm</p>
-                                    <p class="text-gray-300">Saturday: 10am - 4pm</p>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="mt-8">
-                            <h4 class="text-lg font-medium text-white mb-4">Follow Us</h4>
-                            <div class="flex space-x-4">
-                                <a href="#" class="h-10 w-10 rounded-full bg-dark-700 flex items-center justify-center text-gold-400 hover:bg-gold-700 hover:text-white transition duration-300">
-                                    <i class="fab fa-facebook-f"></i>
-                                </a>
-                                <a href="#" class="h-10 w-10 rounded-full bg-dark-700 flex items-center justify-center text-gold-400 hover:bg-gold-700 hover:text-white transition duration-300">
-                                    <i class="fab fa-twitter"></i>
-                                </a>
-                                <a href="#" class="h-10 w-10 rounded-full bg-dark-700 flex items-center justify-center text-gold-400 hover:bg-gold-700 hover:text-white transition duration-300">
-                                    <i class="fab fa-instagram"></i>
-                                </a>
-                                <a href="#" class="h-10 w-10 rounded-full bg-dark-700 flex items-center justify-center text-gold-400 hover:bg-gold-700 hover:text-white transition duration-300">
-                                    <i class="fab fa-linkedin-in"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+                       <form action="https://formspree.io/f/xnnzoowp" method="POST" class="space-y-6">
+  <!-- Redirect to thank-you page -->
+  <input type="hidden" name="_redirect" value="https://zaeha708.github.io/my-website/" />
+
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+    <div>
+      <label for="first-name" class="block text-sm font-medium text-gray-300 mb-1">First Name</label>
+      <input type="text" id="first-name" name="First Name" required class="w-full px-4 py-3 bg-dark-700 border border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-gold-600 focus:border-transparent text-white placeholder-gray-500" placeholder="John">
+    </div>
+    <div>
+      <label for="last-name" class="block text-sm font-medium text-gray-300 mb-1">Last Name</label>
+      <input type="text" id="last-name" name="Last Name" required class="w-full px-4 py-3 bg-dark-700 border border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-gold-600 focus:border-transparent text-white placeholder-gray-500" placeholder="Doe">
+    </div>
+  </div>
+
+  <div>
+    <label for="email" class="block text-sm font-medium text-gray-300 mb-1">Email</label>
+    <input type="email" id="email" name="Email" required class="w-full px-4 py-3 bg-dark-700 border border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-gold-600 focus:border-transparent text-white placeholder-gray-500" placeholder="john@example.com">
+  </div>
+
+  <div>
+    <label for="phone" class="block text-sm font-medium text-gray-300 mb-1">Phone</label>
+    <input type="tel" id="phone" name="Phone" class="w-full px-4 py-3 bg-dark-700 border border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-gold-600 focus:border-transparent text-white placeholder-gray-500" placeholder="(123) 456-7890">
+  </div>
+
+  <div>
+    <label for="message" class="block text-sm font-medium text-gray-300 mb-1">Message</label>
+    <textarea id="message" name="Message" rows="4" required class="w-full px-4 py-3 bg-dark-700 border border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-gold-600 focus:border-transparent text-white placeholder-gray-500" placeholder="Your message..."></textarea>
+  </div>
+
+  <div>
+    <button type="submit" class="w-full bg-gold-700 hover:bg-gold-600 text-white px-6 py-3 rounded-md font-medium transition duration-300">
+      Send Message
+    </button>
+  </div>
+</form>
+
 
     <!-- Footer -->
     <footer class="bg-dark-800 border-t border-gold-800/20 pt-12 pb-8">
@@ -654,7 +599,7 @@
             </div>
             <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center">
                 <p class="text-gray-500 text-sm mb-4 md:mb-0">
-                    &copy; 2023 Luxury Estates. All rights reserved.
+                    &copy; 2023 ProDev Real Estate. All rights reserved.
                 </p>
                 <div class="flex space-x-6">
                     <a href="#" class="text-gray-500 hover:text-gold-400 text-sm transition duration-300">Privacy Policy</a>
@@ -686,7 +631,7 @@
                         <div class="mb-6">
     <h4 class="text-lg font-bold text-white mb-3 heading-font">Gallery</h4>
     <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
-        <img onclick="zoomImage(this.src)" src="https://scontent.fcrk1-2.fna.fbcdn.net/v/t39.30808-6/482030429_24052403171014924_1671479627748940428_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeE1-1MnaFFV4HbYeIy9SfJeHAjXJKRDUQscCNckpENRC5QHY8bxbkrLOudV1nPr2un54kK5_XytWloL_RChB18j&_nc_ohc=KsB6wyJozbEQ7kNvwGUKL1T&_nc_oc=AdkAdDm-4nDCbw3wPMISnuPh0nngJMTWkcl-LI7Ed3c2Y_g0irOVS9KDh_S9zcKKaL8&_nc_zt=23&_nc_ht=scontent.fcrk1-2.fna&_nc_gid=FlQQ79LFgl4gYTh7lwRcyw&oh=00_AfVBXmTD-avDppdtlarHLbx5m0IYrr6B5LjusZPYZdCy9Q&oe=68989F3B" class="w-full h-32 object-cover rounded-md hover:scale-105 transition cursor-pointer" alt="Gallery 1">
+        <img onclick="zoomImage(this.src)" src="https://scontent.fcrk1-2.fna.fbcdn.net/v/t39.30808-6/482030429_24052403171014924_1671479627748940428_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeE1-1MnaFFV4HbYeIy9SfJeHAjXJKRDUQscCNckpENRC5QHY8bxbkrLOudV1nPr2un54kK5_XytWloL_RChB18j&_nc_ohc=KsB6wyJozbEQ7kNvwGUKL1T&_nc_oc=AdkAdDm-4nDCbw3wPMISnuPh0nngJMTWkcl-LI7Ed3c2Y_g0irOVS9KDh_S9zcKKaL8&_nc_zt=23&_nc_ht=scontent.fcrk1-2.fna&_nc_gid=FlQQ79LFgl4gYTh7lwRcyw&oh=00_AfVBXmTD-avDppdtlarHLbx5m0IYrr6B5LjusZPYZdCy9Q&oe=68989F3B" class="w-full h-32 object-cover rounded-md border-1 border-yellow-500 hover:scale-105 transition cursor-pointer" alt="Gallery 1">
         <img onclick="zoomImage(this.src)" src="https://scontent.fcrk1-5.fna.fbcdn.net/v/t39.30808-6/482027938_24052407124347862_5430322302190903528_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeFOvtNgX20P_mxtmY01uVzHGvHm4IHiFyIa8ebggeIXItO7DUvzcsVNsG2h7bGXRetIjBHyLpN910jA175HlfLm&_nc_ohc=6Wmgy7APm98Q7kNvwHccTQz&_nc_oc=Admz4maxBbJmQn5gOapcxIdOGfDJPVdEDHxuni6VQh3AamqLQiGM8M2PUMaYEPzH_JQ&_nc_zt=23&_nc_ht=scontent.fcrk1-5.fna&_nc_gid=PQtCyW2chjJL0HHM-_ShUA&oh=00_AfVdp5ROa1WCDBth_oRTAAWyQoo_aTHuO86S-tmtbIU2bQ&oe=6898B368" class="w-full h-32 object-cover rounded-md hover:scale-105 transition cursor-pointer" alt="Gallery 2">
         <img onclick="zoomImage(this.src)" src="https://scontent.fcrk1-3.fna.fbcdn.net/v/t39.30808-6/482223051_24052408874347687_1774053855065359134_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeH93nE2pZilTMzJsXDCIi8Eemp-Sefy4aJ6an5J5_LhovHzlIdqidezb1HiY96GS2Wjym9JXOWRKz1xNvCi9FCA&_nc_ohc=1gbDUl027cMQ7kNvwE9Pfkh&_nc_oc=AdnjHrNC6ywRhJpYIm0Ny3GfQSYmdSnAgLulj7TmT_ox8F6-vlSMA36-ctGMo9TQTFw&_nc_zt=23&_nc_ht=scontent.fcrk1-3.fna&_nc_gid=kPnyFH2hTO1bJfy5WTXL5g&oh=00_AfWhfQBmJVT4UAp7vRZplQoAmVMPDBwokv_DRcTrt3Uhag&oe=6898CC39" class="w-full h-32 object-cover rounded-md hover:scale-105 transition cursor-pointer" alt="Gallery 3">
         <img onclick="zoomImage(this.src)" src="https://scontent.fcrk1-5.fna.fbcdn.net/v/t39.30808-6/474926021_122127902834670822_6513514315802307927_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=127cfc&_nc_ohc=n52tEqWZndgQ7kNvwHZ5uOY&_nc_oc=AdlJ3k2_iTnoujTURxEcIU-y2tQ3csOVS-oQVO670Zi-cB9YQcoQOgZbeTelZQuhekM&_nc_zt=23&_nc_ht=scontent.fcrk1-5.fna&_nc_gid=aSpTx2x4qDXpoI_uupRJkA&oh=00_AfWmPATzUNRRGKg3jker1HmSM57Um562OcDWcau4kKrgHA&oe=6898AB6F" class="w-full h-32 object-cover rounded-md hover:scale-105 transition cursor-pointer" alt="Gallery 4">
@@ -710,11 +655,20 @@
                             <div class="grid grid-cols-2 gap-4 mb-4">
                                 <div class="flex items-center">
                                     <div class="bg-gold-700/20 p-2 rounded-md mr-3">
-                                        <i class="fas fa-ruler-combined text-gold-500"></i>
+                                        <i class="fas fa-file-signature text-gold-500"></i>
                                     </div>
                                     <div>
-                                        <p class="text-gray-400 text-sm">Lot Area</p>
-                                        <p class="text-white">100 - 500 - sqms</p>
+                                        <p class="text-gray-400 text-sm">Approved plan</p>
+                                        <p class="text-white">available</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-center">
+                                    <div class="bg-gold-700/20 p-2 rounded-md mr-3">
+                                        <i class="fas fa-tag text-gold-500"></i>
+                                    </div>
+                                    <div>
+                                        <p class="text-gray-400 text-sm">Sold</p>
+                                        <p class="text-white">14</p>
                                     </div>
                                 </div>
                                 <div class="flex items-center">
@@ -723,24 +677,24 @@
                                     </div>
                                     <div>
                                         <p class="text-gray-400 text-sm">Road Access</p>
-                                        <p class="text-white">Paved</p>
+                                        <p class="text-white">6 METERS WIDE</p>
                                     </div>
                                 </div>
                                 <div class="flex items-center">
                                     <div class="bg-gold-700/20 p-2 rounded-md mr-3">
-                                        <i class="fas fa-tint text-gold-500"></i>
+                                        <i class="fas fa-city text-gold-500"></i>
                                     </div>
                                     <div>
-                                        <p class="text-gray-400 text-sm">Water</p>
-                                        <p class="text-white">Municipal</p>
+                                        <p class="text-gray-400 text-sm">lots available</p>
+                                        <p class="text-white">25</p>
                                     </div>
                                 </div>
                                 <div class="flex items-center">
                                     <div class="bg-gold-700/20 p-2 rounded-md mr-3">
-                                        <i class="fas fa-bolt text-gold-500"></i>
+                                        <i class="fas fa-clipboard-check text-gold-500"></i>
                                     </div>
                                     <div>
-                                        <p class="text-gray-400 text-sm">Electricity</p>
+                                        <p class="text-gray-400 text-sm">DOAS</p>
                                         <p class="text-white">Available</p>
                                     </div>
                                 </div>
@@ -800,7 +754,7 @@
                         <div class="flex justify-between items-start mb-6">
                             <div>
                                 <p class="text-gray-400 text-sm">Starting from</p>
-                                <p class="text-gold-500 text-2xl font-bold">$180,000</p>
+                                <p class="text-gold-500 text-2xl font-bold">₱180,000</p>
                             </div>
                             <div class="text-right">
                                 <p class="text-gray-400 text-sm">Lot Size</p>
@@ -903,7 +857,7 @@
                         <div class="flex justify-between items-start mb-6">
                             <div>
                                 <p class="text-gray-400 text-sm">Starting from</p>
-                                <p class="text-gold-500 text-2xl font-bold">$450,000</p>
+                                <p class="text-gold-500 text-2xl font-bold">₱450,000</p>
                             </div>
                             <div class="text-right">
                                 <p class="text-gray-400 text-sm">Lot Size</p>
@@ -985,11 +939,15 @@
             </div>
         </div>
     </div>
-    <div id="imageZoomModal" class="fixed inset-0 bg-black/70 flex items-center justify-center z-[9999] hidden">
-    <div class="relative p-4 bg-white rounded-xl shadow-xl max-w-3xl w-full max-h-[80vh]">
-        <button onclick="closeZoom()" class="absolute top-2 right-2 text-black text-2xl hover:text-red-600">&times;</button>
-        <img id="zoomedImage" src="" alt="Zoomed" class="w-full h-auto max-h-[70vh] object-contain rounded-lg" />
-    </div>
+    <!-- 🔍 Zoom Image Modal -->
+<div id="imageZoomModal" class="fixed inset-0 bg-black/70 flex items-center justify-center z-[9999] hidden">
+  <div class="relative p-3 bg-black rounded-xl1 shadow-xl max-w-3xl w-full max-h-[80vh] animate-zoom">
+    <button onclick="closeZoom()" class="absolute top-2 right-2 text-black text-2xl hover:text-red-600">&times;</button>
+    <img id="zoomedImage" src="" alt="Zoomed" class="w-full h-auto max-h-[70vh] object-contain rounded-lg border-4 border-black" />
+
+  </div>
+</div>
+
 </div>
 
     <script>
@@ -1080,12 +1038,14 @@
         const image = document.getElementById("zoomedImage");
         image.src = src;
         modal.classList.remove("hidden");
+        document.body.style.overflow = 'hidden';
     }
 
     function closeZoom() {
         const modal = document.getElementById("imageZoomModal");
         modal.classList.add("hidden");
         document.getElementById("zoomedImage").src = "";
+        document.body.style.overflow = 'auto';
     }
 
     // Optional: Close zoom modal with ESC key
@@ -1093,6 +1053,7 @@
         if (event.key === "Escape") {
             closeZoom();
         }
+        
     });
             });
         });
