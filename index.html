@@ -328,7 +328,7 @@
                 </div>
             </div>
             
-            <div class="text-center mt-12">
+            <div class="text-center mt-12">see all property
                 <a href="#" class="inline-flex items-center text-gold-400 hover:text-gold-300 font-medium">
 
     <!-- About Section -->
@@ -503,57 +503,112 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-16 bg-dark-900">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4 heading-font">
-                    Contact <span class="gold-gradient-text">Us</span>
-                </h2>
-                <div class="w-24 h-1 bg-gold-600 mx-auto mb-6"></div>
-                <p class="text-gray-400 max-w-2xl mx-auto">
-                    Reach out to our team for inquiries, property viewings, or investment consultations.
-                </p>
-            </div>
-            
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
-                <div class="animate-fade-in">
-                    <form class="space-y-6">
-                       <form action="https://formspree.io/f/xnnzoowp" method="POST" class="space-y-6">
-  <!-- Redirect to thank-you page -->
-  <input type="hidden" name="_redirect" value="https://zaeha708.github.io/my-website/" />
+    <!-- Contact Form Section -->
+<section id="contact" class="max-w-xl mx-auto p-6 mt-10 rounded-xl border-2 border-gold-500 text-white font-sans animate-fade-in" style="background-color: #1f1f1f; box-shadow: 0 0 20px rgba(215, 159, 10, 0.4);">
+  <h2 class="text-3xl font-semibold heading-font text-center gold-gradient-text">Contact Us</h2>
+  <p class="text-center mt-2 text-gray-300">Reach out to our team for inquiries, property viewings, or investment consultations.</p>
 
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-    <div>
-      <label for="first-name" class="block text-sm font-medium text-gray-300 mb-1">First Name</label>
-      <input type="text" id="first-name" name="First Name" required class="w-full px-4 py-3 bg-dark-700 border border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-gold-600 focus:border-transparent text-white placeholder-gray-500" placeholder="John">
-    </div>
-    <div>
-      <label for="last-name" class="block text-sm font-medium text-gray-300 mb-1">Last Name</label>
-      <input type="text" id="last-name" name="Last Name" required class="w-full px-4 py-3 bg-dark-700 border border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-gold-600 focus:border-transparent text-white placeholder-gray-500" placeholder="Doe">
-    </div>
-  </div>
+  <form action="https://formspree.io/f/xnnzoowp" method="POST" id="contact-form" class="flex flex-col gap-4 mt-6">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="First Name" required class="input-style">
 
-  <div>
-    <label for="email" class="block text-sm font-medium text-gray-300 mb-1">Email</label>
-    <input type="email" id="email" name="Email" required class="w-full px-4 py-3 bg-dark-700 border border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-gold-600 focus:border-transparent text-white placeholder-gray-500" placeholder="john@example.com">
-  </div>
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="Last Name" required class="input-style">
 
-  <div>
-    <label for="phone" class="block text-sm font-medium text-gray-300 mb-1">Phone</label>
-    <input type="tel" id="phone" name="Phone" class="w-full px-4 py-3 bg-dark-700 border border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-gold-600 focus:border-transparent text-white placeholder-gray-500" placeholder="(123) 456-7890">
-  </div>
+    <label for="email">Email</label>
+    <input type="email" id="email" name="Email" required class="input-style">
 
-  <div>
-    <label for="message" class="block text-sm font-medium text-gray-300 mb-1">Message</label>
-    <textarea id="message" name="Message" rows="4" required class="w-full px-4 py-3 bg-dark-700 border border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-gold-600 focus:border-transparent text-white placeholder-gray-500" placeholder="Your message..."></textarea>
-  </div>
+    <label for="phone">Phone</label>
+    <input type="tel" id="phone" name="Phone" class="input-style">
 
-  <div>
-    <button type="submit" class="w-full bg-gold-700 hover:bg-gold-600 text-white px-6 py-3 rounded-md font-medium transition duration-300">
-      Send Message
-    </button>
+    <label for="message">Message</label>
+    <textarea id="message" name="Message" required class="input-style min-h-[100px]"></textarea>
+
+    <button type="submit" class="btn-style mt-2">Send Message</button>
+  </form>
+
+  <div id="thank-you" class="text-green-400 text-center font-bold mt-4 opacity-0 transition-opacity duration-700">
+    ✅ Thank you! Your message has been sent successfully.
   </div>
-</form>
+</section>
+
+<!-- Styling -->
+<style>
+  .input-style {
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid gold;
+    background-color: #000000;
+    color: white;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  }
+
+  .input-style:focus {
+    outline: none;
+    border-color: #d79f0a;
+    box-shadow: 0 0 10px #d79f0a;
+    background-color: #1a1a1a;
+    animation: pulse-glow 1s ease-in-out infinite alternate;
+  }
+
+  @keyframes pulse-glow {
+    from {
+      box-shadow: 0 0 10px #d79f0a;
+    }
+    to {
+      box-shadow: 0 0 20px #d79f0a;
+    }
+  }
+
+  .btn-style {
+    background-color: black;
+    color: gold;
+    padding: 12px;
+    border: 2px solid gold;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .btn-style:hover {
+    background-color: gold;
+    color: black;
+    transform: scale(1.05);
+    box-shadow: 0 0 10px gold;
+  }
+
+  .gold-gradient-text {
+    background: linear-gradient(90deg, #e6c366, #d79f0a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 5px rgba(215, 159, 10, 0.6);
+  }
+</style>
+
+<!-- JavaScript -->
+<script>
+  const form = document.getElementById('contact-form');
+  const thankYou = document.getElementById('thank-you');
+
+  form.addEventListener('submit', async function (e) {
+    e.preventDefault();
+    const formData = new FormData(form);
+    const response = await fetch(form.action, {
+      method: form.method,
+      body: formData,
+      headers: { 'Accept': 'application/json' }
+    });
+
+    if (response.ok) {
+      form.reset();
+      thankYou.style.opacity = '1';
+    } else {
+      alert("There was an error. Please try again.");
+    }
+  });
+</script>
+
 
 
     <!-- Footer -->
@@ -561,7 +616,7 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
                 <div>
-                    <h3 class="text-lg font-bold text-white mb-4 heading-font">LUXURY<span class="gold-gradient-text">ESTATES</span></h3>
+                    <h3 class="text-lg font-bold text-white mb-4 heading-font">PRODEV<span class="gold-gradient-text"> REAL ESTATE</span></h3>
                     <p class="text-gray-400 text-sm">
                         Premium land properties for discerning investors and homeowners seeking the finest locations.
                     </p>
