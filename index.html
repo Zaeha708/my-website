@@ -14,16 +14,16 @@
             theme: {
                 extend: {
                     colors: {
-                        gold: {
-                            100: '#faf3e0',
-                            200: '#f5e7c1',
-                            300: '#f0dba3',
-                            400: '#ebcf84',
-                            500: '#e6c366',
-                            600: '#e1b747',
-                            700: '#dcab29',
-                            800: '#d79f0a',
-                            900: '#c28e09',
+                        navy: {
+                            100: '#e6eaf3',
+                            200: '#b3bed9',
+                            300: '#8092bf',
+                            400: '#4d66a5',
+                            500: '#1a3a8b',
+                            600: '#153073',
+                            700: '#10265b',
+                            800: '#0b1c43',
+                            900: '#06122b',
                         },
                         dark: {
                             100: '#d1d5db',
@@ -61,8 +61,8 @@
         
         body {
             font-family: 'Poppins', sans-serif;
-            background-color: #111827;
-            color: #f5f5f5;
+            background-color: #fff;
+            color: #1a3a8b;
         }
         
         .heading-font {
@@ -80,11 +80,11 @@
             transform: translateY(20px);
         }
         
-        .gold-gradient-text {
-            background: linear-gradient(90deg, #e6c366, #d79f0a);
+        .navy-gradient-text {
+            background: linear-gradient(90deg, #1a3a8b, #4d66a5);
             -webkit-background-clip: text;
-            background-clip: text;
-            color: transparent;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0 0 5px rgba(26,58,139,0.3);
         }
         
         .gold-border-gradient {
@@ -155,25 +155,25 @@
 </head>
 <body class="bg-dark-900">
     <!-- Navigation -->
-    <nav class="bg-dark-800 border-b border-gold-800/20 fixed w-full z-50">
+    <nav class="bg-navy-800 border-b border-navy-300 fixed w-full z-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-16 items-center">
                 <div class="flex items-center">
                     <div class="flex-shrink-0 flex items-center">
-                        <i class="fas fa-building text-gold-600 text-2xl mr-2"></i>
-                        <span class="text-xl font-bold text-white heading-font">ProDev<span class="gold-gradient-text"> REAL ESTATE</span></span>
+                        <i class="fas fa-building text-navy-400 text-2xl mr-2"></i>
+                        <span class="text-xl font-bold text-white heading-font">ProDev<span class="navy-gradient-text"> REAL ESTATE</span></span>
                     </div>
                 </div>
                 <div class="hidden md:block">
                     <div class="ml-10 flex items-baseline space-x-4">
-                        <a href="#" class="text-gold-400 hover:text-gold-200 px-3 py-2 rounded-md text-sm font-medium transition duration-300">HOME</a>
-                        <a href="#properties" class="text-gray-300 hover:text-gold-400 px-3 py-2 rounded-md text-sm font-medium transition duration-300">Properties</a>
-                        <a href="#about" class="text-gray-300 hover:text-gold-400 px-3 py-2 rounded-md text-sm font-medium transition duration-300">About</a>
-                        <a href="#contact" class="text-gray-300 hover:text-gold-400 px-3 py-2 rounded-md text-sm font-medium transition duration-300">Contact</a>
+                        <a href="#" class="text-navy-400 hover:text-navy-200 px-3 py-2 rounded-md text-sm font-medium transition duration-300">HOME</a>
+                        <a href="#properties" class="text-gray-300 hover:text-navy-400 px-3 py-2 rounded-md text-sm font-medium transition duration-300">Properties</a>
+                        <a href="#about" class="text-gray-300 hover:text-navy-400 px-3 py-2 rounded-md text-sm font-medium transition duration-300">About</a>
+                        <a href="#contact" class="text-gray-300 hover:text-navy-400 px-3 py-2 rounded-md text-sm font-medium transition duration-300">Contact</a>
                     </div>
                 </div>
                 <div class="md:hidden">
-                    <button id="mobile-menu-button" class="text-gray-300 hover:text-gold-400 focus:outline-none">
+                    <button id="mobile-menu-button" class="text-gray-300 hover:text-navy-400 focus:outline-none">
                         <i class="fas fa-bars text-xl"></i>
                     </button>
                 </div>
@@ -181,39 +181,39 @@
         </div>
         
         <!-- Mobile menu -->
-        <div id="mobile-menu" class="md:hidden hidden bg-dark-700">
+        <div id="mobile-menu" class="md:hidden hidden bg-navy-700">
             <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-                <a href="#" class="text-gold-400 block px-3 py-2 rounded-md text-base font-medium">Home</a>
-                <a href="#properties" class="text-gray-300 hover:text-gold-400 block px-3 py-2 rounded-md text-base font-medium">Properties</a>
-                <a href="#about" class="text-gray-300 hover:text-gold-400 block px-3 py-2 rounded-md text-base font-medium">About</a>
-                <a href="#contact" class="text-gray-300 hover:text-gold-400 block px-3 py-2 rounded-md text-base font-medium">Contact</a>
+                <a href="#" class="text-navy-400 block px-3 py-2 rounded-md text-base font-medium">Home</a>
+                <a href="#properties" class="text-gray-300 hover:text-navy-400 block px-3 py-2 rounded-md text-base font-medium">Properties</a>
+                <a href="#about" class="text-gray-300 hover:text-navy-400 block px-3 py-2 rounded-md text-base font-medium">About</a>
+                <a href="#contact" class="text-gray-300 hover:text-navy-400 block px-3 py-2 rounded-md text-base font-medium">Contact</a>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
     <section class="pt-24 pb-16 md:pt-32 md:pb-24 relative overflow-hidden">
-        <div class="absolute inset-0 bg-gradient-to-b from-gold-900/10 to-dark-900 z-0"></div>
+        <div class="absolute inset-0 bg-gradient-to-b from-navy-900/10 to-dark-900 z-0"></div>
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="md:flex items-center">
                 <div class="md:w-1/2 mb-12 md:mb-0 animate-fade-in">
                     <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 heading-font">
-                        <span class="gold-gradient-text">Premium</span> Land Properties
+                        <span class="navy-gradient-text">Premium</span> Land Properties
                     </h1>
                     <p class="text-lg text-gray-300 mb-8 max-w-lg">
                         Discover exclusive subdivided lots, portion lands, and premium plain lands for your dream investment. We offer the finest properties in prime locations.
                     </p>
                     <div class="flex space-x-4">
-                        <a href="#properties" class="bg-gold-700 hover:bg-gold-600 text-white px-6 py-3 rounded-md font-medium transition duration-300 transform hover:scale-105">
+                        <a href="#properties" class="bg-navy-700 hover:bg-navy-600 text-white px-6 py-3 rounded-md font-medium transition duration-300 transform hover:scale-105">
                             View Properties
                         </a>
-                        <a href="#contact" class="border border-gold-600 text-gold-400 hover:bg-gold-900/30 px-6 py-3 rounded-md font-medium transition duration-300 transform hover:scale-105">
+                        <a href="#contact" class="border border-navy-600 text-navy-400 hover:bg-navy-900/30 px-6 py-3 rounded-md font-medium transition duration-300 transform hover:scale-105">
                             Contact Us
                         </a>
                     </div>
                 </div>
                 <div class="md:w-1/2 animate-slide-up">
-                    <div class="video-container rounded-xl overflow-hidden shadow-2xl border-2 border-gold-600/30">
+                    <div class="video-container rounded-xl overflow-hidden shadow-2xl border-2 border-navy-600/30">
                         <iframe src="https://www.youtube.com/embed/2xmYosOM4jE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                 </div>
@@ -223,14 +223,14 @@
     </section>
 
     <!-- Featured Properties -->
-    <section id="properties" class="py-16 bg-dark-800 relative">
-        <div class="absolute top-0 left-0 right-0 h-16 bg-gradient-to-b from-dark-900 to-transparent z-10"></div>
+    <section id="properties" class="py-16 bg-navy-800 relative">
+        <div class="absolute top-0 left-0 right-0 h-16 bg-gradient-to-b from-navy-900 to-transparent z-10"></div>
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16 animate-fade-in">
                 <h2 class="text-3xl md:text-4xl font-bold text-white mb-4 heading-font">
-                    Our <span class="gold-gradient-text">Featured</span> Properties
+                    Our <span class="navy-gradient-text">Featured</span> Properties
                 </h2>
-                <div class="w-24 h-1 bg-gold-600 mx-auto mb-6"></div>
+                <div class="w-24 h-1 bg-navy-600 mx-auto mb-6"></div>
                 <p class="text-gray-400 max-w-2xl mx-auto">
                     Explore our premium selection of land properties. Each parcel is carefully selected for its potential and prime location.
                 </p>
@@ -238,27 +238,27 @@
             
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Property 1 -->
-                <div class="property-card bg-dark-700 rounded-xl overflow-hidden shadow-lg transition duration-500 transform hover:-translate-y-2 relative group">
+                <div class="property-card bg-navy-700 rounded-xl overflow-hidden shadow-lg transition duration-500 transform hover:-translate-y-2 relative group">
                     <div class="relative overflow-hidden h-64">
                         <img src="https://scontent.fcrk1-5.fna.fbcdn.net/v/t39.30808-6/475263163_122123040314605860_7388368848718730168_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeHj0eoOMKAU7YHxzQYI60YfOAVszoy1zqQ4BWzOjLXOpGzYIQD9JpFz4tEgnqMzbdCZXMbJWM4N7VFSrn9XKTip&_nc_ohc=93Kv34en4i4Q7kNvwERlLFf&_nc_oc=AdnWRb_ug8G_GWsBtivNok6qXh9a2HdT3gPWfjdDzwVkNttTTSimU0wUg_jp8xGfrpg&_nc_zt=23&_nc_ht=scontent.fcrk1-5.fna&_nc_gid=47vDE6o4DR9PY28mnYRN1w&oh=00_AfV_JmYmOJTMeOacdcedHVCc9bYNXpgB8iCkhuxVlJlcFA&oe=68975AC7" 
                              alt="Mangaldan Estate" class="w-full h-full object-cover transition duration-500 group-hover:scale-105">
                         <div class="absolute inset-0 bg-gradient-to-t from-dark-900/80 to-transparent"></div>
-                        <div class="absolute top-4 right-4 bg-gold-700 text-white text-xs font-bold px-3 py-1 rounded-full">
+                        <div class="absolute top-4 right-4 bg-navy-700 text-white text-xs font-bold px-3 py-1 rounded-full">
                             FOR SALE
                         </div>
                         <div class="property-overlay absolute bottom-0 left-0 right-0 p-6">
-                            <button onclick="openModal('modal1')" class="bg-gold-700 hover:bg-gold-600 text-white px-4 py-2 rounded-md font-medium transition duration-300 w-full">
+                            <button onclick="openModal('modal1')" class="bg-navy-700 hover:bg-navy-600 text-white px-4 py-2 rounded-md font-medium transition duration-300 w-full">
                                 View Details
                             </button>
                         </div>
                     </div>
                     <div class="p-6">
                         <h3 class="text-xl font-bold text-white mb-2 heading-font">Mangaldan Estate Lots</h3>
-                        <p class="text-gold-400 mb-4"><i class="fas fa-map-marker-alt mr-2"></i> Buenlag Mangaldan</p>
+                        <p class="text-navy-400 mb-4"><i class="fas fa-map-marker-alt mr-2"></i> Buenlag Mangaldan</p>
                         <div class="flex justify-between items-center">
                             <div>
                                 <p class="text-gray-400 text-sm">Starting from</p>
-                                <p class="text-gold-500 text-xl font-bold"> ₱1,500-2,500 PER SQM</p>
+                                <p class="text-navy-500 text-xl font-bold"> ₱1,500-2,500 PER SQM</p>
                             </div>
                             <div class="text-right">
                                 <p class="text-gray-400 text-sm">Lot Size</p>
@@ -269,27 +269,27 @@
                 </div>
                 
                 <!-- Property 2 -->
-                <div class="property-card bg-dark-700 rounded-xl overflow-hidden shadow-lg transition duration-500 transform hover:-translate-y-2 relative group">
+                <div class="property-card bg-navy-700 rounded-xl overflow-hidden shadow-lg transition duration-500 transform hover:-translate-y-2 relative group">
                     <div class="relative overflow-hidden h-64">
                         <img src="https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
-                             alt="Golden Plains" class="w-full h-full object-cover transition duration-500 group-hover:scale-105">
+                             alt="golden Plains" class="w-full h-full object-cover transition duration-500 group-hover:scale-105">
                         <div class="absolute inset-0 bg-gradient-to-t from-dark-900/80 to-transparent"></div>
-                        <div class="absolute top-4 right-4 bg-gold-700 text-white text-xs font-bold px-3 py-1 rounded-full">
+                        <div class="absolute top-4 right-4 bg-navy-700 text-white text-xs font-bold px-3 py-1 rounded-full">
                             FOR SALE
                         </div>
                         <div class="property-overlay absolute bottom-0 left-0 right-0 p-6">
-                            <button onclick="openModal('modal2')" class="bg-gold-700 hover:bg-gold-600 text-white px-4 py-2 rounded-md font-medium transition duration-300 w-full">
+                            <button onclick="openModal('modal2')" class="bg-navy-700 hover:bg-navy-600 text-white px-4 py-2 rounded-md font-medium transition duration-300 w-full">
                                 View Details
                             </button>
                         </div>
                     </div>
                     <div class="p-6">
-                        <h3 class="text-xl font-bold text-white mb-2 heading-font">Golden Plains Subdivision</h3>
-                        <p class="text-gold-400 mb-4"><i class="fas fa-map-marker-alt mr-2"></i> Austin, Texas</p>
+                        <h3 class="text-xl font-bold text-white mb-2 heading-font">golden Plains Subdivision</h3>
+                        <p class="text-navy-400 mb-4"><i class="fas fa-map-marker-alt mr-2"></i> Austin, Texas</p>
                         <div class="flex justify-between items-center">
                             <div>
                                 <p class="text-gray-400 text-sm">Starting from</p>
-                                <p class="text-gold-500 text-xl font-bold">₱180,000</p>
+                                <p class="text-navy-500 text-xl font-bold">₱180,000</p>
                             </div>
                             <div class="text-right">
                                 <p class="text-gray-400 text-sm">Lot Size</p>
@@ -300,27 +300,27 @@
                 </div>
                 
                 <!-- Property 3 -->
-                <div class="property-card bg-dark-700 rounded-xl overflow-hidden shadow-lg transition duration-500 transform hover:-translate-y-2 relative group">
+                <div class="property-card bg-navy-700 rounded-xl overflow-hidden shadow-lg transition duration-500 transform hover:-translate-y-2 relative group">
                     <div class="relative overflow-hidden h-64">
                         <img src="https://images.unsplash.com/photo-1600566752227-8f55913b15b3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
                              alt="Oceanview Parcels" class="w-full h-full object-cover transition duration-500 group-hover:scale-105">
                         <div class="absolute inset-0 bg-gradient-to-t from-dark-900/80 to-transparent"></div>
-                        <div class="absolute top-4 right-4 bg-gold-700 text-white text-xs font-bold px-3 py-1 rounded-full">
+                        <div class="absolute top-4 right-4 bg-navy-700 text-white text-xs font-bold px-3 py-1 rounded-full">
                             FOR SALE
                         </div>
                         <div class="property-overlay absolute bottom-0 left-0 right-0 p-6">
-                            <button onclick="openModal('modal3')" class="bg-gold-700 hover:bg-gold-600 text-white px-4 py-2 rounded-md font-medium transition duration-300 w-full">
+                            <button onclick="openModal('modal3')" class="bg-navy-700 hover:bg-navy-600 text-white px-4 py-2 rounded-md font-medium transition duration-300 w-full">
                                 View Details
                             </button>
                         </div>
                     </div>
                     <div class="p-6">
                         <h3 class="text-xl font-bold text-white mb-2 heading-font">Oceanview Parcels</h3>
-                        <p class="text-gold-400 mb-4"><i class="fas fa-map-marker-alt mr-2"></i> Malibu, California</p>
+                        <p class="text-navy-400 mb-4"><i class="fas fa-map-marker-alt mr-2"></i> Malibu, California</p>
                         <div class="flex justify-between items-center">
                             <div>
                                 <p class="text-gray-400 text-sm">Starting from</p>
-                                <p class="text-gold-500 text-xl font-bold">₱450,000</p>
+                                <p class="text-navy-500 text-xl font-bold">₱450,000</p>
                             </div>
                             <div class="text-right">
                                 <p class="text-gray-400 text-sm">Lot Size</p>
@@ -330,9 +330,40 @@
                     </div>
                 </div>
             </div>
+                <!-- Property 4 -->
+                <div class="property-card bg-navy-700 rounded-xl overflow-hidden shadow-lg transition duration-500 transform hover:-translate-y-2 relative group">
+                    <div class="relative overflow-hidden h-64">
+                        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80"
+                            alt="Sample Property" class="w-full h-full object-cover transition duration-500 group-hover:scale-105 cursor-pointer"
+                            onclick="openModal('customPropertyModal')">
+                        <div class="absolute inset-0 bg-gradient-to-t from-dark-900/80 to-transparent"></div>
+                        <div class="absolute top-4 right-4 bg-navy-700 text-white text-xs font-bold px-3 py-1 rounded-full">
+                            FOR SALE
+                        </div>
+                        <div class="property-overlay absolute bottom-0 left-0 right-0 p-6">
+                            <button onclick="openModal('customPropertyModal')" class="bg-navy-700 hover:bg-navy-600 text-white px-4 py-2 rounded-md font-medium transition duration-300 w-full">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-white mb-2 heading-font">Sample Property</h3>
+                        <p class="text-navy-400 mb-4"><i class="fas fa-map-marker-alt mr-2"></i> Sample Location</p>
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <p class="text-gray-400 text-sm">Starting from</p>
+                                <p class="text-navy-500 text-xl font-bold">₱999,999</p>
+                            </div>
+                            <div class="text-right">
+                                <p class="text-gray-400 text-sm">Lot Size</p>
+                                <p class="text-white">200 sqm</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             
             <div class="text-center mt-12">see all property
-                <a href="#" class="inline-flex items-center text-gold-400 hover:text-gold-300 font-medium">
+                <a href="#" class="inline-flex items-center text-navy-400 hover:text-navy-300 font-medium">
 
     <!-- About Section -->
     <section id="about" class="py-16 bg-dark-900 relative">
@@ -340,9 +371,9 @@
             <div class="md:flex items-center">
                 <div class="md:w-1/2 mb-12 md:mb-0 md:pr-12 animate-fade-in">
                     <h2 class="text-3xl md:text-4xl font-bold text-white mb-6 heading-font">
-                        About <span class="gold-gradient-text">ProDev Real Estate</span>
+                        About <span class="navy-gradient-text">ProDev Real Estate</span>
                     </h2>
-                    <div class="w-24 h-1 bg-gold-600 mb-6"></div>
+                    <div class="w-24 h-1 bg-navy-600 mb-6"></div>
                     <p class="text-gray-400 mb-6">
                         ProDev Real Estate is a premier real estate firm specializing in high-value land properties. With over 15 years of experience, we've helped hundreds of clients find their perfect investment opportunities.
                     </p>
@@ -352,7 +383,7 @@
                     <div class="space-y-4">
                         <div class="flex items-start">
                             <div class="flex-shrink-0 mt-1">
-                                <div class="flex items-center justify-center h-8 w-8 rounded-full bg-gold-700 text-gold-200">
+                                <div class="flex items-center justify-center h-8 w-8 rounded-full bg-navy-700 text-navy-200">
                                     <i class="fas fa-check"></i>
                                 </div>
                             </div>
@@ -363,7 +394,7 @@
                         </div>
                         <div class="flex items-start">
                             <div class="flex-shrink-0 mt-1">
-                                <div class="flex items-center justify-center h-8 w-8 rounded-full bg-gold-700 text-gold-200">
+                                <div class="flex items-center justify-center h-8 w-8 rounded-full bg-navy-700 text-navy-200">
                                     <i class="fas fa-check"></i>
                                 </div>
                             </div>
@@ -374,7 +405,7 @@
                         </div>
                         <div class="flex items-start">
                             <div class="flex-shrink-0 mt-1">
-                                <div class="flex items-center justify-center h-8 w-8 rounded-full bg-gold-700 text-gold-200">
+                                <div class="flex items-center justify-center h-8 w-8 rounded-full bg-navy-700 text-navy-200">
                                     <i class="fas fa-check"></i>
                                 </div>
                             </div>
@@ -389,9 +420,9 @@
                     <div class="relative">
                         <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
                              alt="About Us" class="rounded-xl shadow-2xl w-full">
-                        <div class="absolute -bottom-6 -right-6 bg-gold-700 p-6 rounded-xl shadow-lg w-3/4">
+                        <div class="absolute -bottom-6 -right-6 bg-navy-700 p-6 rounded-xl shadow-lg w-3/4">
                             <h3 class="text-white text-xl font-bold mb-2 heading-font">Why Choose Us?</h3>
-                            <p class="text-gold-100 text-sm">
+                            <p class="text-navy-100 text-sm">
                                 Our expertise in land properties ensures you get the best value and guidance throughout your investment journey.
                             </p>
                         </div>
@@ -406,30 +437,30 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
                 <h2 class="text-3xl md:text-4xl font-bold text-white mb-4 heading-font">
-                    Client <span class="gold-gradient-text">Testimonials</span>
+                    Client <span class="navy-gradient-text">Testimonials</span>
                 </h2>
-                <div class="w-24 h-1 bg-gold-600 mx-auto mb-6"></div>
+                <div class="w-24 h-1 bg-navy-600 mx-auto mb-6"></div>
                 <p class="text-gray-400 max-w-2xl mx-auto">
                     Hear what our clients say about their experience with ProDev Real Estate
                 </p>
             </div>
             
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="bg-dark-700 p-8 rounded-xl border border-gold-800/20 hover:border-gold-600/50 transition duration-300 transform hover:scale-[1.02]">
+                <div class="bg-dark-700 p-8 rounded-xl border border-navy-800/20 hover:border-navy-600/50 transition duration-300 transform hover:scale-[1.02]">
                     <div class="flex items-center mb-4">
                         <div class="flex-shrink-0">
                             <img class="h-10 w-10 rounded-full" src="https://randomuser.me/api/portraits/women/44.jpg" alt="Sarah J.">
                         </div>
                         <div class="ml-4">
                             <div class="text-base font-medium text-white">Sarah J.</div>
-                            <div class="text-sm text-gold-400">Investor</div>
+                            <div class="text-sm text-navy-400">Investor</div>
                         </div>
                     </div>
                     <div class="text-gray-400 mb-4">
-                        <i class="fas fa-quote-left text-gold-600/30 mr-2"></i>
+                        <i class="fas fa-quote-left text-navy-600/30 mr-2"></i>
                         ProDev Real Estate helped me find the perfect parcel for my vacation home. Their knowledge of the local market was invaluable.
                     </div>
-                    <div class="flex text-gold-500">
+                    <div class="flex text-navy-500">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -438,21 +469,21 @@
                     </div>
                 </div>
                 
-                <div class="bg-dark-700 p-8 rounded-xl border border-gold-800/20 hover:border-gold-600/50 transition duration-300 transform hover:scale-[1.02]">
+                <div class="bg-dark-700 p-8 rounded-xl border border-navy-800/20 hover:border-navy-600/50 transition duration-300 transform hover:scale-[1.02]">
                     <div class="flex items-center mb-4">
                         <div class="flex-shrink-0">
                             <img class="h-10 w-10 rounded-full" src="https://randomuser.me/api/portraits/men/32.jpg" alt="Michael T.">
                         </div>
                         <div class="ml-4">
                             <div class="text-base font-medium text-white">Michael T.</div>
-                            <div class="text-sm text-gold-400">Developer</div>
+                            <div class="text-sm text-navy-400">Developer</div>
                         </div>
                     </div>
                     <div class="text-gray-400 mb-4">
-                        <i class="fas fa-quote-left text-gold-600/30 mr-2"></i>
+                        <i class="fas fa-quote-left text-navy-600/30 mr-2"></i>
                         The subdivided lots we purchased through ProDev Real Estate have appreciated significantly. Their team provided excellent guidance.
                     </div>
-                    <div class="flex text-gold-500">
+                    <div class="flex text-navy-500">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -461,21 +492,21 @@
                     </div>
                 </div>
                 
-                <div class="bg-dark-700 p-8 rounded-xl border border-gold-800/20 hover:border-gold-600/50 transition duration-300 transform hover:scale-[1.02]">
+                <div class="bg-dark-700 p-8 rounded-xl border border-navy-800/20 hover:border-navy-600/50 transition duration-300 transform hover:scale-[1.02]">
                     <div class="flex items-center mb-4">
                         <div class="flex-shrink-0">
                             <img class="h-10 w-10 rounded-full" src="https://randomuser.me/api/portraits/women/68.jpg" alt="Jennifer L.">
                         </div>
                         <div class="ml-4">
                             <div class="text-base font-medium text-white">Jennifer L.</div>
-                            <div class="text-sm text-gold-400">Homeowner</div>
+                            <div class="text-sm text-navy-400">Homeowner</div>
                         </div>
                     </div>
                     <div class="text-gray-400 mb-4">
-                        <i class="fas fa-quote-left text-gold-600/30 mr-2"></i>
+                        <i class="fas fa-quote-left text-navy-600/30 mr-2"></i>
                         From the first meeting to closing, the process was smooth and professional. I couldn't be happier with my land purchase.
                     </div>
-                    <div class="flex text-gold-500">
+                    <div class="flex text-navy-500">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -488,17 +519,17 @@
     </section>
 
     <!-- CTA Section -->
-    <section class="py-16 bg-gradient-to-r from-gold-900/20 to-dark-900 relative overflow-hidden">
+    <section class="py-16 bg-gradient-to-r from-navy-900/20 to-dark-900 relative overflow-hidden">
         <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80')] bg-cover bg-center opacity-10"></div>
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
             <div class="text-center">
                 <h2 class="text-3xl md:text-4xl font-bold text-white mb-6 heading-font">
-                    Ready to <span class="gold-gradient-text">Invest</span> in Land?
+                    Ready to <span class="navy-gradient-text">Invest</span> in Land?
                 </h2>
                 <p class="text-xl text-gray-300 max-w-3xl mx-auto mb-8">
                     Contact us today to schedule a consultation and explore available properties that match your investment goals.
                 </p>
-                <a href="#contact" class="bg-gold-700 hover:bg-gold-600 text-white px-8 py-4 rounded-md font-medium text-lg transition duration-300 transform hover:scale-105 inline-flex items-center">
+                <a href="#contact" class="bg-navy-700 hover:bg-navy-600 text-white px-8 py-4 rounded-md font-medium text-lg transition duration-300 transform hover:scale-105 inline-flex items-center">
                     Get Started <i class="fas fa-arrow-right ml-2"></i>
                 </a>
             </div>
@@ -507,8 +538,8 @@
 
     <!-- Contact Section -->
     <!-- Contact Form Section -->
-<section id="contact" class="max-w-xl mx-auto p-6 mt-10 rounded-xl border-2 border-gold-500 text-white font-sans animate-fade-in" style="background-color: #1f1f1f; box-shadow: 0 0 20px rgba(215, 159, 10, 0.4);">
-  <h2 class="text-3xl font-semibold heading-font text-center gold-gradient-text">Contact Us</h2>
+<section id="contact" class="max-w-xl mx-auto p-6 mt-10 rounded-xl border-2 border-navy-500 text-white font-sans animate-fade-in" style="background-color: #1f1f1f; box-shadow: 0 0 20px rgba(215, 159, 10, 0.4);">
+  <h2 class="text-3xl font-semibold heading-font text-center navy-gradient-text">Contact Us</h2>
   <p class="text-center mt-2 text-gray-300">Reach out to our team for inquiries, property viewings, or investment consultations.</p>
 
   <form action="https://formspree.io/f/xnnzoowp" method="POST" id="contact-form" class="flex flex-col gap-4 mt-6">
@@ -540,7 +571,7 @@
   .input-style {
     padding: 12px;
     border-radius: 10px;
-    border: 1px solid gold;
+    border: 1px solid #1a3a8b;
     background-color: #000000;
     color: white;
     transition: border-color 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
@@ -548,26 +579,26 @@
 
   .input-style:focus {
     outline: none;
-    border-color: #d79f0a;
-    box-shadow: 0 0 10px #d79f0a;
+    border-color: #1a3a8b;
+    box-shadow: 0 0 10px #1a3a8b;
     background-color: #1a1a1a;
     animation: pulse-glow 1s ease-in-out infinite alternate;
   }
 
   @keyframes pulse-glow {
     from {
-      box-shadow: 0 0 10px #d79f0a;
+      box-shadow: 0 0 10px #1a3a8b;
     }
     to {
-      box-shadow: 0 0 20px #d79f0a;
+      box-shadow: 0 0 20px #1a3a8b;
     }
   }
 
   .btn-style {
     background-color: black;
-    color: gold;
+    color: #1a3a8b;
     padding: 12px;
-    border: 2px solid gold;
+    border: 2px solid #1a3a8b;
     border-radius: 10px;
     font-weight: bold;
     cursor: pointer;
@@ -575,17 +606,17 @@
   }
 
   .btn-style:hover {
-    background-color: gold;
-    color: black;
+    background-color: #1a3a8b;
+    color: white;
     transform: scale(1.05);
-    box-shadow: 0 0 10px gold;
+    box-shadow: 0 0 10px #1a3a8b;
   }
 
-  .gold-gradient-text {
-    background: linear-gradient(90deg, #e6c366, #d79f0a);
+  .navy-gradient-text {
+    background: linear-gradient(90deg, #1a3a8b, #4d66a5);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    text-shadow: 0 0 5px rgba(215, 159, 10, 0.6);
+    text-shadow: 0 0 5px rgba(26,58,139,0.3);
   }
 </style>
 
@@ -610,9 +641,47 @@
       alert("There was an error. Please try again.");
     }
   });
+
+  function downloadBrochure(imageUrl, details) {
+    // Download image
+    const linkImg = document.createElement('a');
+    linkImg.href = imageUrl;
+    linkImg.download = 'property-image.jpg';
+    document.body.appendChild(linkImg);
+    linkImg.click();
+    document.body.removeChild(linkImg);
+    // Download details as txt
+    const blob = new Blob([details], { type: 'text/plain' });
+    const linkTxt = document.createElement('a');
+    linkTxt.href = URL.createObjectURL(blob);
+    linkTxt.download = 'property-details.txt';
+    document.body.appendChild(linkTxt);
+    linkTxt.click();
+    document.body.removeChild(linkTxt);
+  }
+
+  const form = document.getElementById('contact-form');
+  const thankYou = document.getElementById('thank-you');
+
+  form.addEventListener('submit', async function (e) {
+    e.preventDefault();
+    const formData = new FormData(form);
+    const response = await fetch(form.action, {
+      method: form.method,
+      body: formData,
+      headers: { 'Accept': 'application/json' }
+    });
+
+    if (response.ok) {
+      form.reset();
+      thankYou.style.opacity = '1';
+    } else {
+      alert("There was an error. Please try again.");
+    }
+  });
 </script>
-<div class="mt-8 flex items-center justify-center gap-4 text-gold-400 border border-gold-600 px-6 py-4 rounded-md bg-black bg-opacity-60 shadow-md w-fit mx-auto">
-  <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-gold-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+<div class="mt-8 flex items-center justify-center gap-4 text-navy-400 border border-navy-600 px-6 py-4 rounded-md bg-black bg-opacity-60 shadow-md w-fit mx-auto">
+  <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-navy-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h2l3 7-1.5 1.5a16.493 16.493 0 006.5 6.5L14 19l7 3v-2a2 2 0 00-2-2h-3.586a1 1 0 01-.707-.293l-2.414-2.414a1 1 0 01-.293-.707V5a2 2 0 00-2-2H5a2 2 0 00-2 2v0z" />
   </svg>
   <a href="tel:+639123456789" class="text-lg font-semibold hover:underline">+63 9154226584</a>
@@ -622,11 +691,11 @@
 
 
     <!-- Footer -->
-    <footer class="bg-dark-800 border-t border-gold-800/20 pt-12 pb-8">
+    <footer class="bg-dark-800 border-t border-navy-800/20 pt-12 pb-8">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
                 <div>
-                    <h3 class="text-lg font-bold text-white mb-4 heading-font">PRODEV<span class="gold-gradient-text"> REAL ESTATE</span></h3>
+                    <h3 class="text-lg font-bold text-white mb-4 heading-font">PRODEV<span class="navy-gradient-text"> REAL ESTATE</span></h3>
                     <p class="text-gray-400 text-sm">
                         Premium land properties for discerning investors and homeowners seeking the finest locations.
                     </p>
@@ -634,19 +703,19 @@
                 <div>
                     <h4 class="text-base font-bold text-white mb-4">Quick Links</h4>
                     <ul class="space-y-2">
-                        <li><a href="#" class="text-gray-400 hover:text-gold-400 text-sm transition duration-300">Home</a></li>
-                        <li><a href="#properties" class="text-gray-400 hover:text-gold-400 text-sm transition duration-300">Properties</a></li>
-                        <li><a href="#about" class="text-gray-400 hover:text-gold-400 text-sm transition duration-300">About Us</a></li>
-                        <li><a href="#contact" class="text-gray-400 hover:text-gold-400 text-sm transition duration-300">Contact</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-navy-400 text-sm transition duration-300">Home</a></li>
+                        <li><a href="#properties" class="text-gray-400 hover:text-navy-400 text-sm transition duration-300">Properties</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-navy-400 text-sm transition duration-300">About Us</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-navy-400 text-sm transition duration-300">Contact</a></li>
                     </ul>
                 </div>
                 <div>
                     <h4 class="text-base font-bold text-white mb-4">Properties</h4>
                     <ul class="space-y-2">
-                        <li><a href="#" class="text-gray-400 hover:text-gold-400 text-sm transition duration-300">Subdivided Lots</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-gold-400 text-sm transition duration-300">Portion Lands</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-gold-400 text-sm transition duration-300">Plain Lands</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-gold-400 text-sm transition duration-300">Featured Listings</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-navy-400 text-sm transition duration-300">Subdivided Lots</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-navy-400 text-sm transition duration-300">Portion Lands</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-navy-400 text-sm transition duration-300">Plain Lands</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-navy-400 text-sm transition duration-300">Featured Listings</a></li>
                     </ul>
                 </div>
                 <div>
@@ -656,7 +725,7 @@
                     </p>
                     <form class="flex">
                         <input type="email" placeholder="Your email" class="px-4 py-2 bg-dark-700 text-white text-sm rounded-l-md focus:outline-none w-full">
-                        <button type="submit" class="bg-gold-700 hover:bg-gold-600 text-white px-4 py-2 rounded-r-md text-sm transition duration-300">
+                        <button type="submit" class="bg-navy-700 hover:bg-navy-600 text-white px-4 py-2 rounded-r-md text-sm transition duration-300">
                             <i class="fas fa-paper-plane"></i>
                         </button>
                     </form>
@@ -667,9 +736,9 @@
                     &copy; 2023 ProDev Real Estate. All rights reserved.
                 </p>
                 <div class="flex space-x-6">
-                    <a href="#" class="text-gray-500 hover:text-gold-400 text-sm transition duration-300">Privacy Policy</a>
-                    <a href="#" class="text-gray-500 hover:text-gold-400 text-sm transition duration-300">Terms of Service</a>
-                    <a href="#" class="text-gray-500 hover:text-gold-400 text-sm transition duration-300">Sitemap</a>
+                    <a href="#" class="text-gray-500 hover:text-navy-400 text-sm transition duration-300">Privacy Policy</a>
+                    <a href="#" class="text-gray-500 hover:text-navy-400 text-sm transition duration-300">Terms of Service</a>
+                    <a href="#" class="text-gray-500 hover:text-navy-400 text-sm transition duration-300">Sitemap</a>
                 </div>
             </div>
         </div>
@@ -689,25 +758,25 @@
                              alt="Mangaldan Estate" class="w-full h-full object-cover rounded-tl-xl rounded-tr-xl lg:rounded-tr-none lg:rounded-bl-xl">
                         <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-6">
                             <h3 class="text-2xl font-bold text-white heading-font">Mangaldan Estate Lots</h3>
-                            <p class="text-gold-400"><i class="fas fa-map-marker-alt mr-2"></i> Buenlag Mangaldan</p>
+                            <p class="text-navy-400"><i class="fas fa-map-marker-alt mr-2"></i> Buenlag Mangaldan</p>
                         </div>
                     </div>
                     <div class="p-8">
                         <div class="mb-6">
-    <h4 class="text-lg font-bold text-white mb-3 heading-font">Gallery</h4>
-    <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
-        <img onclick="zoomImage(this.src)" src="https://scontent.fcrk1-2.fna.fbcdn.net/v/t39.30808-6/482030429_24052403171014924_1671479627748940428_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeE1-1MnaFFV4HbYeIy9SfJeHAjXJKRDUQscCNckpENRC5QHY8bxbkrLOudV1nPr2un54kK5_XytWloL_RChB18j&_nc_ohc=KsB6wyJozbEQ7kNvwGUKL1T&_nc_oc=AdkAdDm-4nDCbw3wPMISnuPh0nngJMTWkcl-LI7Ed3c2Y_g0irOVS9KDh_S9zcKKaL8&_nc_zt=23&_nc_ht=scontent.fcrk1-2.fna&_nc_gid=FlQQ79LFgl4gYTh7lwRcyw&oh=00_AfVBXmTD-avDppdtlarHLbx5m0IYrr6B5LjusZPYZdCy9Q&oe=68989F3B" class="w-full h-32 object-cover rounded-md border-1 border-yellow-500 hover:scale-105 transition cursor-pointer" alt="Gallery 1">
-        <img onclick="zoomImage(this.src)" src="https://scontent.fcrk1-5.fna.fbcdn.net/v/t39.30808-6/482027938_24052407124347862_5430322302190903528_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeFOvtNgX20P_mxtmY01uVzHGvHm4IHiFyIa8ebggeIXItO7DUvzcsVNsG2h7bGXRetIjBHyLpN910jA175HlfLm&_nc_ohc=6Wmgy7APm98Q7kNvwHccTQz&_nc_oc=Admz4maxBbJmQn5gOapcxIdOGfDJPVdEDHxuni6VQh3AamqLQiGM8M2PUMaYEPzH_JQ&_nc_zt=23&_nc_ht=scontent.fcrk1-5.fna&_nc_gid=PQtCyW2chjJL0HHM-_ShUA&oh=00_AfVdp5ROa1WCDBth_oRTAAWyQoo_aTHuO86S-tmtbIU2bQ&oe=6898B368" class="w-full h-32 object-cover rounded-md hover:scale-105 transition cursor-pointer" alt="Gallery 2">
-        <img onclick="zoomImage(this.src)" src="https://scontent.fcrk1-3.fna.fbcdn.net/v/t39.30808-6/482223051_24052408874347687_1774053855065359134_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeH93nE2pZilTMzJsXDCIi8Eemp-Sefy4aJ6an5J5_LhovHzlIdqidezb1HiY96GS2Wjym9JXOWRKz1xNvCi9FCA&_nc_ohc=1gbDUl027cMQ7kNvwE9Pfkh&_nc_oc=AdnjHrNC6ywRhJpYIm0Ny3GfQSYmdSnAgLulj7TmT_ox8F6-vlSMA36-ctGMo9TQTFw&_nc_zt=23&_nc_ht=scontent.fcrk1-3.fna&_nc_gid=kPnyFH2hTO1bJfy5WTXL5g&oh=00_AfWhfQBmJVT4UAp7vRZplQoAmVMPDBwokv_DRcTrt3Uhag&oe=6898CC39" class="w-full h-32 object-cover rounded-md hover:scale-105 transition cursor-pointer" alt="Gallery 3">
-        <img onclick="zoomImage(this.src)" src="https://scontent.fcrk1-5.fna.fbcdn.net/v/t39.30808-6/474926021_122127902834670822_6513514315802307927_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=127cfc&_nc_ohc=n52tEqWZndgQ7kNvwHZ5uOY&_nc_oc=AdlJ3k2_iTnoujTURxEcIU-y2tQ3csOVS-oQVO670Zi-cB9YQcoQOgZbeTelZQuhekM&_nc_zt=23&_nc_ht=scontent.fcrk1-5.fna&_nc_gid=aSpTx2x4qDXpoI_uupRJkA&oh=00_AfWmPATzUNRRGKg3jker1HmSM57Um562OcDWcau4kKrgHA&oe=6898AB6F" class="w-full h-32 object-cover rounded-md hover:scale-105 transition cursor-pointer" alt="Gallery 4">
-    </div>
-</div>
+                    <h4 class="text-lg font-bold text-white mb-3 heading-font">Gallery</h4>
+                    <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                        <img onclick="zoomImage(this.src)" src="https://scontent.fcrk1-2.fna.fbcdn.net/v/t39.30808-6/482030429_24052403171014924_1671479627748940428_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeE1-1MnaFFV4HbYeIy9SfJeHAjXJKRDUQscCNckpENRC5QHY8bxbkrLOudV1nPr2un54kK5_XytWloL_RChB18j&_nc_ohc=KsB6wyJozbEQ7kNvwGUKL1T&_nc_oc=AdkAdDm-4nDCbw3wPMISnuPh0nngJMTWkcl-LI7Ed3c2Y_g0irOVS9KDh_S9zcKKaL8&_nc_zt=23&_nc_ht=scontent.fcrk1-2.fna&_nc_gid=FlQQ79LFgl4gYTh7lwRcyw&oh=00_AfVBXmTD-avDppdtlarHLbx5m0IYrr6B5LjusZPYZdCy9Q&oe=68989F3B" class="w-full h-32 object-cover rounded-md border-1 border-yellow-500 hover:scale-105 transition cursor-pointer" alt="Gallery 1">
+                        <img onclick="zoomImage(this.src)" src="https://scontent.fcrk1-5.fna.fbcdn.net/v/t39.30808-6/482027938_24052407124347862_5430322302190903528_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeFOvtNgX20P_mxtmY01uVzHGvHm4IHiFyIa8ebggeIXItO7DUvzcsVNsG2h7bGXRetIjBHyLpN910jA175HlfLm&_nc_ohc=6Wmgy7APm98Q7kNvwHccTQz&_nc_oc=Admz4maxBbJmQn5gOapcxIdOGfDJPVdEDHxuni6VQh3AamqLQiGM8M2PUMaYEPzH_JQ&_nc_zt=23&_nc_ht=scontent.fcrk1-5.fna&_nc_gid=PQtCyW2chjJL0HHM-_ShUA&oh=00_AfVdp5ROa1WCDBth_oRTAAWyQoo_aTHuO86S-tmtbIU2bQ&oe=6898B368" class="w-full h-32 object-cover rounded-md hover:scale-105 transition cursor-pointer" alt="Gallery 2">
+                        <img onclick="zoomImage(this.src)" src="https://scontent.fcrk1-3.fna.fbcdn.net/v/t39.30808-6/482223051_24052408874347687_1774053855065359134_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeH93nE2pZilTMzJsXDCIi8Eemp-Sefy4aJ6an5J5_LhovHzlIdqidezb1HiY96GS2Wjym9JXOWRKz1xNvCi9FCA&_nc_ohc=1gbDUl027cMQ7kNvwE9Pfkh&_nc_oc=AdnjHrNC6ywRhJpYIm0Ny3GfQSYmdSnAgLulj7TmT_ox8F6-vlSMA36-ctGMo9TQTFw&_nc_zt=23&_nc_ht=scontent.fcrk1-3.fna&_nc_gid=kPnyFH2hTO1bJfy5WTXL5g&oh=00_AfWhfQBmJVT4UAp7vRZplQoAmVMPDBwokv_DRcTrt3Uhag&oe=6898CC39" class="w-full h-32 object-cover rounded-md hover:scale-105 transition cursor-pointer" alt="Gallery 3">
+                        <img onclick="zoomImage(this.src)" src="https://scontent.fcrk1-5.fna.fbcdn.net/v/t39.30808-6/474926021_122127902834670822_6513514315802307927_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=127cfc&_nc_ohc=n52tEqWZndgQ7kNvwHZ5uOY&_nc_oc=AdlJ3k2_iTnoujTURxEcIU-y2tQ3csOVS-oQVO670Zi-cB9YQcoQOgZbeTelZQuhekM&_nc_zt=23&_nc_ht=scontent.fcrk1-5.fna&_nc_gid=aSpTx2x4qDXpoI_uupRJkA&oh=00_AfWmPATzUNRRGKg3jker1HmSM57Um562OcDWcau4kKrgHA&oe=6898AB6F" class="w-full h-32 object-cover rounded-md hover:scale-105 transition cursor-pointer" alt="Gallery 4">
+                    </div>
+                </div>
 
                         
                         <div class="flex justify-between items-start mb-6">
                             <div>
                                 <p class="text-gray-400 text-sm">Starting from</p>
-                                <p class="text-gold-500 text-2xl font-bold"> ₱2,500 PER SQM</p>
+                                <p class="text-navy-500 text-2xl font-bold"> ₱2,500 PER SQM</p>
                             </div>
                             <div class="text-right">
                                 <p class="text-gray-400 text-sm">Lot Size</p>
@@ -719,8 +788,8 @@
                             <h4 class="text-lg font-bold text-white mb-3 heading-font">Property Details</h4>
                             <div class="grid grid-cols-2 gap-4 mb-4">
                                 <div class="flex items-center">
-                                    <div class="bg-gold-700/20 p-2 rounded-md mr-3">
-                                        <i class="fas fa-file-signature text-gold-500"></i>
+                                    <div class="bg-navy-700/20 p-2 rounded-md mr-3">
+                                        <i class="fas fa-file-signature text-navy-500"></i>
                                     </div>
                                     <div>
                                         <p class="text-gray-400 text-sm">Approved plan</p>
@@ -728,8 +797,8 @@
                                     </div>
                                 </div>
                                 <div class="flex items-center">
-                                    <div class="bg-gold-700/20 p-2 rounded-md mr-3">
-                                        <i class="fas fa-tag text-gold-500"></i>
+                                    <div class="bg-navy-700/20 p-2 rounded-md mr-3">
+                                        <i class="fas fa-tag text-navy-500"></i>
                                     </div>
                                     <div>
                                         <p class="text-gray-400 text-sm">Sold</p>
@@ -737,8 +806,8 @@
                                     </div>
                                 </div>
                                 <div class="flex items-center">
-                                    <div class="bg-gold-700/20 p-2 rounded-md mr-3">
-                                        <i class="fas fa-road text-gold-500"></i>
+                                    <div class="bg-navy-700/20 p-2 rounded-md mr-3">
+                                        <i class="fas fa-road text-navy-500"></i>
                                     </div>
                                     <div>
                                         <p class="text-gray-400 text-sm">Road Access</p>
@@ -746,8 +815,8 @@
                                     </div>
                                 </div>
                                 <div class="flex items-center">
-                                    <div class="bg-gold-700/20 p-2 rounded-md mr-3">
-                                        <i class="fas fa-city text-gold-500"></i>
+                                    <div class="bg-navy-700/20 p-2 rounded-md mr-3">
+                                        <i class="fas fa-city text-navy-500"></i>
                                     </div>
                                     <div>
                                         <p class="text-gray-400 text-sm">lots available</p>
@@ -755,8 +824,8 @@
                                     </div>
                                 </div>
                                 <div class="flex items-center">
-                                    <div class="bg-gold-700/20 p-2 rounded-md mr-3">
-                                        <i class="fas fa-clipboard-check text-gold-500"></i>
+                                    <div class="bg-navy-700/20 p-2 rounded-md mr-3">
+                                        <i class="fas fa-clipboard-check text-navy-500"></i>
                                     </div>
                                     <div>
                                         <p class="text-gray-400 text-sm">DOAS</p>
@@ -776,22 +845,22 @@
                         <div class="mb-6">
                             <h4 class="text-lg font-bold text-white mb-3 heading-font">Features</h4>
                             <ul class="grid grid-cols-1 md:grid-cols-2 gap-2 text-gray-400">
-                                <li class="flex items-center"><i class="fas fa-check-circle text-gold-500 mr-2"></i> Approved plan</li>
-                                <li class="flex items-center"><i class="fas fa-check-circle text-gold-500 mr-2"></i> doas</li>
-                                <li class="flex items-center"><i class="fas fa-check-circle text-gold-500 mr-2"></i> Underground utilities</li>
-                                <li class="flex items-center"><i class="fas fa-check-circle text-gold-500 mr-2"></i> Architectural review</li>
-                                <li class="flex items-center"><i class="fas fa-check-circle text-gold-500 mr-2"></i> Landscaping requirements</li>
-                                <li class="flex items-center"><i class="fas fa-check-circle text-gold-500 mr-2"></i> CC&Rs</li>
+                                <li class="flex items-center"><i class="fas fa-check-circle text-navy-500 mr-2"></i> Approved plan</li>
+                                <li class="flex items-center"><i class="fas fa-check-circle text-navy-500 mr-2"></i> doas</li>
+                                <li class="flex items-center"><i class="fas fa-check-circle text-navy-500 mr-2"></i> Underground utilities</li>
+                                <li class="flex items-center"><i class="fas fa-check-circle text-navy-500 mr-2"></i> Architectural review</li>
+                                <li class="flex items-center"><i class="fas fa-check-circle text-navy-500 mr-2"></i> Landscaping requirements</li>
+                                <li class="flex items-center"><i class="fas fa-check-circle text-navy-500 mr-2"></i> CC&Rs</li>
                             </ul>
                         </div>
                         
                         <div class="flex space-x-4">
-                                <a href="#contact" class="bg-gold-700 hover:bg-gold-600 text-white px-6 py-3 rounded-md font-medium transition duration-300 flex-1 text-center">
+                                <a href="#contact" class="bg-navy-700 hover:bg-navy-600 text-white px-6 py-3 rounded-md font-medium transition duration-300 flex-1 text-center">
                               Inquire Now
                                  </a>
-                                 <a href="images/mangaldan-estate" download class="border border-gold-600 text-gold-400 hover:bg-gold-900/30 px-6 py-3 rounded-md font-medium transition duration-300 flex-1 text-center">
-                                     Download Brochure
-                             </a>
+                                 <button onclick="downloadBrochure('https://scontent.fcrk1-5.fna.fbcdn.net/v/t39.30808-6/475263163_122123040314605860_7388368848718730168_n.jpg', 'Mangaldan Estate Lots\nLocation: Buenlag Mangaldan\nPrice: ₱2,500 PER SQM\nLot Size: 100 - 500 sqms\nFeatures: Approved plan, DOAS, Underground utilities, Architectural review, Landscaping requirements, CC&Rs')" class="border border-navy-600 text-navy-400 hover:bg-navy-900/30 px-6 py-3 rounded-md font-medium transition duration-300 flex-1 text-center">
+        Download Brochure
+    </button>
                             </div>                          
                         </div>
                     </div>
@@ -810,17 +879,17 @@
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-0">
                     <div class="relative h-64 lg:h-full">
                         <img src="https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
-                             alt="Golden Plains" class="w-full h-full object-cover rounded-tl-xl rounded-tr-xl lg:rounded-tr-none lg:rounded-bl-xl">
+                             alt="golden Plains" class="w-full h-full object-cover rounded-tl-xl rounded-tr-xl lg:rounded-tr-none lg:rounded-bl-xl">
                         <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-6">
-                            <h3 class="text-2xl font-bold text-white heading-font">Golden Plains Subdivision</h3>
-                            <p class="text-gold-400"><i class="fas fa-map-marker-alt mr-2"></i> Austin, Texas</p>
+                            <h3 class="text-2xl font-bold text-white heading-font">golden Plains Subdivision</h3>
+                            <p class="text-navy-400"><i class="fas fa-map-marker-alt mr-2"></i> Austin, Texas</p>
                         </div>
                     </div>
                     <div class="p-8">
                         <div class="flex justify-between items-start mb-6">
                             <div>
                                 <p class="text-gray-400 text-sm">Starting from</p>
-                                <p class="text-gold-500 text-2xl font-bold">₱180,000</p>
+                                <p class="text-navy-500 text-2xl font-bold">₱180,000</p>
                             </div>
                             <div class="text-right">
                                 <p class="text-gray-400 text-sm">Lot Size</p>
@@ -832,8 +901,8 @@
                             <h4 class="text-lg font-bold text-white mb-3 heading-font">Property Details</h4>
                             <div class="grid grid-cols-2 gap-4 mb-4">
                                 <div class="flex items-center">
-                                    <div class="bg-gold-700/20 p-2 rounded-md mr-3">
-                                        <i class="fas fa-ruler-combined text-gold-500"></i>
+                                    <div class="bg-navy-700/20 p-2 rounded-md mr-3">
+                                        <i class="fas fa-ruler-combined text-navy-500"></i>
                                     </div>
                                     <div>
                                         <p class="text-gray-400 text-sm">Lot Area</p>
@@ -841,8 +910,8 @@
                                     </div>
                                 </div>
                                 <div class="flex items-center">
-                                    <div class="bg-gold-700/20 p-2 rounded-md mr-3">
-                                        <i class="fas fa-road text-gold-500"></i>
+                                    <div class="bg-navy-700/20 p-2 rounded-md mr-3">
+                                        <i class="fas fa-road text-navy-500"></i>
                                     </div>
                                     <div>
                                         <p class="text-gray-400 text-sm">Road Access</p>
@@ -850,8 +919,8 @@
                                     </div>
                                 </div>
                                 <div class="flex items-center">
-                                    <div class="bg-gold-700/20 p-2 rounded-md mr-3">
-                                        <i class="fas fa-tint text-gold-500"></i>
+                                    <div class="bg-navy-700/20 p-2 rounded-md mr-3">
+                                        <i class="fas fa-tint text-navy-500"></i>
                                     </div>
                                     <div>
                                         <p class="text-gray-400 text-sm">Water</p>
@@ -859,8 +928,8 @@
                                     </div>
                                 </div>
                                 <div class="flex items-center">
-                                    <div class="bg-gold-700/20 p-2 rounded-md mr-3">
-                                        <i class="fas fa-bolt text-gold-500"></i>
+                                    <div class="bg-navy-700/20 p-2 rounded-md mr-3">
+                                        <i class="fas fa-bolt text-navy-500"></i>
                                     </div>
                                     <div>
                                         <p class="text-gray-400 text-sm">Electricity</p>
@@ -873,27 +942,27 @@
                         <div class="mb-6">
                             <h4 class="text-lg font-bold text-white mb-3 heading-font">Description</h4>
                             <p class="text-gray-400">
-                                The Golden Plains Subdivision offers affordable land parcels just minutes from downtown Austin. These properties are perfect for those looking to build their dream home in the Texas hill country. The area features rolling terrain with mature oak trees and beautiful views. Utilities are available at each lot line, with flexible building requirements to accommodate various architectural styles.
+                                The golden Plains Subdivision offers affordable land parcels just minutes from downtown Austin. These properties are perfect for those looking to build their dream home in the Texas hill country. The area features rolling terrain with mature oak trees and beautiful views. Utilities are available at each lot line, with flexible building requirements to accommodate various architectural styles.
                             </p>
                         </div>
                         
                         <div class="mb-6">
                             <h4 class="text-lg font-bold text-white mb-3 heading-font">Features</h4>
                             <ul class="grid grid-cols-1 md:grid-cols-2 gap-2 text-gray-400">
-                                <li class="flex items-center"><i class="fas fa-check-circle text-gold-500 mr-2"></i> Low property taxes</li>
-                                <li class="flex items-center"><i class="fas fa-check-circle text-gold-500 mr-2"></i> No HOA fees</li>
-                                <li class="flex items-center"><i class="fas fa-check-circle text-gold-500 mr-2"></i> Flexible building codes</li>
-                                <li class="flex items-center"><i class="fas fa-check-circle text-gold-500 mr-2"></i> Close to schools</li>
-                                <li class="flex items-center"><i class="fas fa-check-circle text-gold-500 mr-2"></i> 15 minutes to downtown</li>
-                                <li class="flex items-center"><i class="fas fa-check-circle text-gold-500 mr-2"></i> Mineral rights negotiable</li>
+                                <li class="flex items-center"><i class="fas fa-check-circle text-navy-500 mr-2"></i> Low property taxes</li>
+                                <li class="flex items-center"><i class="fas fa-check-circle text-navy-500 mr-2"></i> No HOA fees</li>
+                                <li class="flex items-center"><i class="fas fa-check-circle text-navy-500 mr-2"></i> Flexible building codes</li>
+                                <li class="flex items-center"><i class="fas fa-check-circle text-navy-500 mr-2"></i> Close to schools</li>
+                                <li class="flex items-center"><i class="fas fa-check-circle text-navy-500 mr-2"></i> 15 minutes to downtown</li>
+                                <li class="flex items-center"><i class="fas fa-check-circle text-navy-500 mr-2"></i> Mineral rights negotiable</li>
                             </ul>
                         </div>
                         
                         <div class="flex space-x-4">
-                            <a href="#contact" class="bg-gold-700 hover:bg-gold-600 text-white px-6 py-3 rounded-md font-medium transition duration-300 flex-1 text-center">
+                            <a href="#contact" class="bg-navy-700 hover:bg-navy-600 text-white px-6 py-3 rounded-md font-medium transition duration-300 flex-1 text-center">
                                 Inquire Now
                             </a>
-                            <button class="border border-gold-600 text-gold-400 hover:bg-gold-900/30 px-6 py-3 rounded-md font-medium transition duration-300 flex-1">
+                            <button onclick="downloadBrochure('https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80', 'golden Plains Subdivision\nLocation: Austin, Texas\nPrice: ₱180,000\nLot Size: 0.25 sqm\nFeatures: Low property taxes, No HOA fees, Flexible building codes, Close to schools, 15 minutes to downtown, Mineral rights negotiable')" class="border border-navy-600 text-navy-400 hover:bg-navy-900/30 px-6 py-3 rounded-md font-medium transition duration-300 flex-1 text-center">
                                 Download Brochure
                             </button>
                         </div>
@@ -916,14 +985,14 @@
                              alt="Oceanview Parcels" class="w-full h-full object-cover rounded-tl-xl rounded-tr-xl lg:rounded-tr-none lg:rounded-bl-xl">
                         <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-6">
                             <h3 class="text-2xl font-bold text-white heading-font">Oceanview Parcels</h3>
-                            <p class="text-gold-400"><i class="fas fa-map-marker-alt mr-2"></i> Malibu, California</p>
+                            <p class="text-navy-400"><i class="fas fa-map-marker-alt mr-2"></i> Malibu, California</p>
                         </div>
                     </div>
                     <div class="p-8">
                         <div class="flex justify-between items-start mb-6">
                             <div>
                                 <p class="text-gray-400 text-sm">Starting from</p>
-                                <p class="text-gold-500 text-2xl font-bold">₱450,000</p>
+                                <p class="text-navy-500 text-2xl font-bold">₱450,000</p>
                             </div>
                             <div class="text-right">
                                 <p class="text-gray-400 text-sm">Lot Size</p>
@@ -935,8 +1004,8 @@
                             <h4 class="text-lg font-bold text-white mb-3 heading-font">Property Details</h4>
                             <div class="grid grid-cols-2 gap-4 mb-4">
                                 <div class="flex items-center">
-                                    <div class="bg-gold-700/20 p-2 rounded-md mr-3">
-                                        <i class="fas fa-ruler-combined text-gold-500"></i>
+                                    <div class="bg-navy-700/20 p-2 rounded-md mr-3">
+                                        <i class="fas fa-ruler-combined text-navy-500"></i>
                                     </div>
                                     <div>
                                         <p class="text-gray-400 text-sm">Lot Area</p>
@@ -944,8 +1013,8 @@
                                     </div>
                                 </div>
                                 <div class="flex items-center">
-                                    <div class="bg-gold-700/20 p-2 rounded-md mr-3">
-                                        <i class="fas fa-road text-gold-500"></i>
+                                    <div class="bg-navy-700/20 p-2 rounded-md mr-3">
+                                        <i class="fas fa-road text-navy-500"></i>
                                     </div>
                                     <div>
                                         <p class="text-gray-400 text-sm">Road Access</p>
@@ -953,8 +1022,8 @@
                                     </div>
                                 </div>
                                 <div class="flex items-center">
-                                    <div class="bg-gold-700/20 p-2 rounded-md mr-3">
-                                        <i class="fas fa-tint text-gold-500"></i>
+                                    <div class="bg-navy-700/20 p-2 rounded-md mr-3">
+                                        <i class="fas fa-tint text-navy-500"></i>
                                     </div>
                                     <div>
                                         <p class="text-gray-400 text-sm">Water</p>
@@ -962,8 +1031,8 @@
                                     </div>
                                 </div>
                                 <div class="flex items-center">
-                                    <div class="bg-gold-700/20 p-2 rounded-md mr-3">
-                                        <i class="fas fa-bolt text-gold-500"></i>
+                                    <div class="bg-navy-700/20 p-2 rounded-md mr-3">
+                                        <i class="fas fa-bolt text-navy-500"></i>
                                     </div>
                                     <div>
                                         <p class="text-gray-400 text-sm">Electricity</p>
@@ -983,23 +1052,132 @@
                         <div class="mb-6">
                             <h4 class="text-lg font-bold text-white mb-3 heading-font">Features</h4>
                             <ul class="grid grid-cols-1 md:grid-cols-2 gap-2 text-gray-400">
-                                <li class="flex items-center"><i class="fas fa-check-circle text-gold-500 mr-2"></i> 180-degree ocean views</li>
-                                <li class="flex items-center"><i class="fas fa-check-circle text-gold-500 mr-2"></i> Private beach access</li>
-                                <li class="flex items-center"><i class="fas fa-check-circle text-gold-500 mr-2"></i> Geotechnical reports available</li>
-                                <li class="flex items-center"><i class="fas fa-check-circle text-gold-500 mr-2"></i> Architectural review required</li>
-                                <li class="flex items-center"><i class="fas fa-check-circle text-gold-500 mr-2"></i> Minimum 3,500 sq.ft. homes</li>
-                                <li class="flex items-center"><i class="fas fa-check-circle text-gold-500 mr-2"></i> 20 minutes to Malibu Pier</li>
+                                <li class="flex items-center"><i class="fas fa-check-circle text-navy-500 mr-2"></i> 180-degree ocean views</li>
+                                <li class="flex items-center"><i class="fas fa-check-circle text-navy-500 mr-2"></i> Private beach access</li>
+                                <li class="flex items-center"><i class="fas fa-check-circle text-navy-500 mr-2"></i> Geotechnical reports available</li>
+                                <li class="flex items-center"><i class="fas fa-check-circle text-navy-500 mr-2"></i> Architectural review required</li>
+                                <li class="flex items-center"><i class="fas fa-check-circle text-navy-500 mr-2"></i> Minimum 3,500 sq.ft. homes</li>
+                                <li class="flex items-center"><i class="fas fa-check-circle text-navy-500 mr-2"></i> 20 minutes to Malibu Pier</li>
                             </ul>
                         </div>
                         
                         <div class="flex space-x-4">
-                            <a href="#contact" class="bg-gold-700 hover:bg-gold-600 text-white px-6 py-3 rounded-md font-medium transition duration-300 flex-1 text-center">
+                            <a href="#contact" class="bg-navy-700 hover:bg-navy-600 text-white px-6 py-3 rounded-md font-medium transition duration-300 flex-1 text-center">
                                 Inquire Now
                             </a>
-                            <button class="border border-gold-600 text-gold-400 hover:bg-gold-900/30 px-6 py-3 rounded-md font-medium transition duration-300 flex-1">
+                            <button onclick="downloadBrochure('https://images.unsplash.com/photo-1600566752227-8f55913b15b3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80', 'Oceanview Parcels\nLocation: Malibu, California\nPrice: ₱450,000\nLot Size: 100 - 500 sqms\nFeatures: 180-degree ocean views, Private beach access, Geotechnical reports available, Architectural review required, Minimum 3,500 sq.ft. homes, 20 minutes to Malibu Pier')" class="border border-navy-600 text-navy-400 hover:bg-navy-900/30 px-6 py-3 rounded-md font-medium transition duration-300 flex-1 text-center">
                                 Download Brochure
                             </button>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Replace your current Modal 4: Sample Property with the following for a detailed modal like Modal 1 -->
+
+<!-- Modal 4: Sample Property -->
+<div id="customPropertyModal" class="modal fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center p-4 z-50 opacity-0 pointer-events-none transition duration-300">
+    <div class="modal-content bg-dark-800 rounded-xl max-w-4xl w-full max-h-[90vh] overflow-y-auto">
+        <div class="relative">
+            <button onclick="closeModal('customPropertyModal')" class="absolute top-4 right-4 text-gray-400 hover:text-white bg-dark-900 rounded-full p-2 z-10">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-0">
+                <div class="relative h-64 lg:h-full">
+                    <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80"
+                         alt="Sample Property" class="w-full h-full object-cover rounded-tl-xl rounded-tr-xl lg:rounded-tr-none lg:rounded-bl-xl">
+                    <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-6">
+                        <h3 class="text-2xl font-bold text-white heading-font">Sample Property</h3>
+                        <p class="text-navy-400"><i class="fas fa-map-marker-alt mr-2"></i> Sample Location</p>
+                    </div>
+                </div>
+                <div class="p-8">
+                    <div class="flex justify-between items-start mb-6">
+                        <div>
+                            <p class="text-gray-400 text-sm">Starting from</p>
+                            <p class="text-navy-500 text-2xl font-bold">₱999,999</p>
+                        </div>
+                        <div class="text-right">
+                            <p class="text-gray-400 text-sm">Lot Size</p>
+                            <p class="text-white">200 sqm</p>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <h4 class="text-lg font-bold text-white mb-3 heading-font">Property Details</h4>
+                        <div class="grid grid-cols-2 gap-4 mb-4">
+                            <div class="flex items-center">
+                                <div class="bg-navy-700/20 p-2 rounded-md mr-3">
+                                    <i class="fas fa-file-signature text-navy-500"></i>
+                                </div>
+                                <div>
+                                    <p class="text-gray-400 text-sm">Approved plan</p>
+                                    <p class="text-white">Available</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="bg-navy-700/20 p-2 rounded-md mr-3">
+                                    <i class="fas fa-tag text-navy-500"></i>
+                                </div>
+                                <div>
+                                    <p class="text-gray-400 text-sm">Sold</p>
+                                    <p class="text-white">5</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="bg-navy-700/20 p-2 rounded-md mr-3">
+                                    <i class="fas fa-road text-navy-500"></i>
+                                </div>
+                                <div>
+                                    <p class="text-gray-400 text-sm">Road Access</p>
+                                    <p class="text-white">Concrete</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="bg-navy-700/20 p-2 rounded-md mr-3">
+                                    <i class="fas fa-city text-navy-500"></i>
+                                </div>
+                                <div>
+                                    <p class="text-gray-400 text-sm">Lots available</p>
+                                    <p class="text-white">10</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="bg-navy-700/20 p-2 rounded-md mr-3">
+                                    <i class="fas fa-clipboard-check text-navy-500"></i>
+                                </div>
+                                <div>
+                                    <p class="text-gray-400 text-sm">DOAS</p>
+                                    <p class="text-white">Available</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <h4 class="text-lg font-bold text-white mb-3 heading-font">Description</h4>
+                        <p class="text-gray-400">
+                            This sample property offers a spacious 200 sqm lot in a peaceful location. Ideal for residential or investment purposes, with all utilities available and easy access to main roads.
+                        </p>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <h4 class="text-lg font-bold text-white mb-3 heading-font">Features</h4>
+                        <ul class="grid grid-cols-1 md:grid-cols-2 gap-2 text-gray-400">
+                            <li class="flex items-center"><i class="fas fa-check-circle text-navy-500 mr-2"></i> Clean title</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-navy-500 mr-2"></i> Water & electricity ready</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-navy-500 mr-2"></i> Gated community</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-navy-500 mr-2"></i> 24/7 security</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="flex space-x-4">
+                        <a href="#contact" class="bg-navy-700 hover:bg-navy-600 text-white px-6 py-3 rounded-md font-medium transition duration-300 flex-1 text-center">
+                            Inquire Now
+                        </a>
+                            Download Brochure
+                        </button>
                     </div>
                 </div>
             </div>
@@ -1057,6 +1235,7 @@
         modal.classList.add('opacity-0', 'pointer-events-none');
         document.body.style.overflow = 'auto';
     }
+    
 
     // Close modal when clicking outside
     document.querySelectorAll('.modal').forEach(modal => {
