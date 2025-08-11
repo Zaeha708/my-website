@@ -151,29 +151,53 @@
   animation: zoomIn 0.3s ease-out forwards;
 }
 
+  .btn-style, button, .property-card button, .modal-content button, .footer button {
+    background-color: #1a3a8b;
+    color: #fff;
+    border: 2px solid #1a3a8b;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s, border 0.2s, box-shadow 0.2s, transform 0.2s;
+    box-shadow: 0 2px 8px 0 rgba(26,58,139,0.08);
+  }
+
+  .btn-style:hover, button:hover, .property-card button:hover, .modal-content button:hover, .footer button:hover {
+    background-color: #fff;
+    color: #1a3a8b;
+    border-color: #1a3a8b;
+    transform: scale(1.05);
+    box-shadow: 0 0 10px #1a3a8b;
+  }
+
+  .btn-style:focus, button:focus, .property-card button:focus, .modal-content button:focus, .footer button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px #b3bed9;
+  }
+
     </style>
 </head>
-<body class="bg-dark-900">
+<body class="bg-white">
     <!-- Navigation -->
-    <nav class="bg-navy-800 border-b border-navy-300 fixed w-full z-50">
+    <nav class="bg-white border-b border-navy-300 fixed w-full z-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-16 items-center">
                 <div class="flex items-center">
                     <div class="flex-shrink-0 flex items-center">
-                        <i class="fas fa-building text-navy-400 text-2xl mr-2"></i>
-                        <span class="text-xl font-bold text-white heading-font">ProDev<span class="navy-gradient-text"> REAL ESTATE</span></span>
+                        <img src="prodev-estate-logo/ProDev Estate Logo.png" alt="ProDev Estate Logo" style="height:64px; width:auto; display:block; margin:auto;" />
+                        <span class="text-xl font-bold text-navy-800 heading-font">ProDev<span class="navy-gradient-text"> REAL ESTATE</span></span>
                     </div>
                 </div>
                 <div class="hidden md:block">
                     <div class="ml-10 flex items-baseline space-x-4">
-                        <a href="#" class="text-navy-400 hover:text-navy-200 px-3 py-2 rounded-md text-sm font-medium transition duration-300">HOME</a>
-                        <a href="#properties" class="text-gray-300 hover:text-navy-400 px-3 py-2 rounded-md text-sm font-medium transition duration-300">Properties</a>
-                        <a href="#about" class="text-gray-300 hover:text-navy-400 px-3 py-2 rounded-md text-sm font-medium transition duration-300">About</a>
-                        <a href="#contact" class="text-gray-300 hover:text-navy-400 px-3 py-2 rounded-md text-sm font-medium transition duration-300">Contact</a>
+                        <a href="#" class="text-navy-700 hover:text-navy-500 px-3 py-2 rounded-md text-sm font-medium transition duration-300">HOME</a>
+                        <a href="#properties" class="text-navy-700 hover:text-navy-500 px-3 py-2 rounded-md text-sm font-medium transition duration-300">Properties</a>
+                        <a href="#about" class="text-navy-700 hover:text-navy-500 px-3 py-2 rounded-md text-sm font-medium transition duration-300">About</a>
+                        <a href="#contact" class="text-navy-700 hover:text-navy-500 px-3 py-2 rounded-md text-sm font-medium transition duration-300">Contact</a>
                     </div>
                 </div>
                 <div class="md:hidden">
-                    <button id="mobile-menu-button" class="text-gray-300 hover:text-navy-400 focus:outline-none">
+                    <button id="mobile-menu-button" class="text-navy-700 hover:text-navy-500 focus:outline-none">
                         <i class="fas fa-bars text-xl"></i>
                     </button>
                 </div>
@@ -181,12 +205,12 @@
         </div>
         
         <!-- Mobile menu -->
-        <div id="mobile-menu" class="md:hidden hidden bg-navy-700">
+        <div id="mobile-menu" class="md:hidden hidden bg-white">
             <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-                <a href="#" class="text-navy-400 block px-3 py-2 rounded-md text-base font-medium">Home</a>
-                <a href="#properties" class="text-gray-300 hover:text-navy-400 block px-3 py-2 rounded-md text-base font-medium">Properties</a>
-                <a href="#about" class="text-gray-300 hover:text-navy-400 block px-3 py-2 rounded-md text-base font-medium">About</a>
-                <a href="#contact" class="text-gray-300 hover:text-navy-400 block px-3 py-2 rounded-md text-base font-medium">Contact</a>
+                <a href="#" class="text-navy-700 block px-3 py-2 rounded-md text-base font-medium">Home</a>
+                <a href="#properties" class="text-navy-700 hover:text-navy-500 block px-3 py-2 rounded-md text-base font-medium">Properties</a>
+                <a href="#about" class="text-navy-700 hover:text-navy-500 block px-3 py-2 rounded-md text-base font-medium">About</a>
+                <a href="#contact" class="text-navy-700 hover:text-navy-500 block px-3 py-2 rounded-md text-base font-medium">Contact</a>
             </div>
         </div>
     </nav>
@@ -197,10 +221,10 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="md:flex items-center">
                 <div class="md:w-1/2 mb-12 md:mb-0 animate-fade-in">
-                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 heading-font">
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-black mb-6 heading-font">
                         <span class="navy-gradient-text">Premium</span> Land Properties
                     </h1>
-                    <p class="text-lg text-gray-300 mb-8 max-w-lg">
+                    <p class="text-lg text-gray-34500 mb-8 max-w-lg">
                         Discover exclusive subdivided lots, portion lands, and premium plain lands for your dream investment. We offer the finest properties in prime locations.
                     </p>
                     <div class="flex space-x-4">
@@ -213,7 +237,7 @@
                     </div>
                 </div>
                 <div class="md:w-1/2 animate-slide-up">
-                    <div class="video-container rounded-xl overflow-hidden shadow-2xl border-2 border-navy-600/30">
+                    <div class="video-container rounded-xl overflow-hidden shadow-2xl border-2 border-gold-600/30">
                         <iframe src="https://www.youtube.com/embed/2xmYosOM4jE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                 </div>
@@ -227,11 +251,11 @@
         <div class="absolute top-0 left-0 right-0 h-16 bg-gradient-to-b from-navy-900 to-transparent z-10"></div>
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16 animate-fade-in">
-                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4 heading-font">
+                <h2 class="text-3xl md:text-4xl font-bold text-black mb-4 heading-font">
                     Our <span class="navy-gradient-text">Featured</span> Properties
                 </h2>
                 <div class="w-24 h-1 bg-navy-600 mx-auto mb-6"></div>
-                <p class="text-gray-400 max-w-2xl mx-auto">
+                <p class="text-gray-700 max-w-2xl mx-auto">
                     Explore our premium selection of land properties. Each parcel is carefully selected for its potential and prime location.
                 </p>
             </div>
@@ -253,7 +277,7 @@
                         </div>
                     </div>
                     <div class="p-6">
-                        <h3 class="text-xl font-bold text-white mb-2 heading-font">Mangaldan Estate Lots</h3>
+                        <h3 class="text-xl font-bold text-black mb-2 heading-font">Mangaldan Estate Lots</h3>
                         <p class="text-navy-400 mb-4"><i class="fas fa-map-marker-alt mr-2"></i> Buenlag Mangaldan</p>
                         <div class="flex justify-between items-center">
                             <div>
@@ -284,7 +308,7 @@
                         </div>
                     </div>
                     <div class="p-6">
-                        <h3 class="text-xl font-bold text-white mb-2 heading-font">golden Plains Subdivision</h3>
+                        <h3 class="text-xl font-bold text-black mb-2 heading-font">golden Plains Subdivision</h3>
                         <p class="text-navy-400 mb-4"><i class="fas fa-map-marker-alt mr-2"></i> Austin, Texas</p>
                         <div class="flex justify-between items-center">
                             <div>
@@ -315,7 +339,7 @@
                         </div>
                     </div>
                     <div class="p-6">
-                        <h3 class="text-xl font-bold text-white mb-2 heading-font">Oceanview Parcels</h3>
+                        <h3 class="text-xl font-bold text-black mb-2 heading-font">Oceanview Parcels</h3>
                         <p class="text-navy-400 mb-4"><i class="fas fa-map-marker-alt mr-2"></i> Malibu, California</p>
                         <div class="flex justify-between items-center">
                             <div>
@@ -347,7 +371,7 @@
                         </div>
                     </div>
                     <div class="p-6">
-                        <h3 class="text-xl font-bold text-white mb-2 heading-font">Sample Property</h3>
+                        <h3 class="text-xl font-bold text-black mb-2 heading-font">Sample Property</h3>
                         <p class="text-navy-400 mb-4"><i class="fas fa-map-marker-alt mr-2"></i> Sample Location</p>
                         <div class="flex justify-between items-center">
                             <div>
@@ -362,22 +386,22 @@
                     </div>
                 </div>
             
-            <div class="text-center mt-12">see all property
+            <div class="text-center mt-12">
                 <a href="#" class="inline-flex items-center text-navy-400 hover:text-navy-300 font-medium">
 
     <!-- About Section -->
-    <section id="about" class="py-16 bg-dark-900 relative">
+    <section id="about" class="py-16 bg-white relative">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="md:flex items-center">
                 <div class="md:w-1/2 mb-12 md:mb-0 md:pr-12 animate-fade-in">
-                    <h2 class="text-3xl md:text-4xl font-bold text-white mb-6 heading-font">
+                    <h2 class="text-3xl md:text-4xl font-bold text-black mb-6 heading-font">
                         About <span class="navy-gradient-text">ProDev Real Estate</span>
                     </h2>
                     <div class="w-24 h-1 bg-navy-600 mb-6"></div>
-                    <p class="text-gray-400 mb-6">
+                    <p class="text-black mb-6">
                         ProDev Real Estate is a premier real estate firm specializing in high-value land properties. With over 15 years of experience, we've helped hundreds of clients find their perfect investment opportunities.
                     </p>
-                    <p class="text-gray-400 mb-8">
+                    <p class="text-black mb-8">
                         Our portfolio includes premium subdivided lots, portion lands, and untouched plain lands in the most sought-after locations across the country. We pride ourselves on our integrity, market knowledge, and commitment to client satisfaction.
                     </p>
                     <div class="space-y-4">
@@ -388,8 +412,8 @@
                                 </div>
                             </div>
                             <div class="ml-3">
-                                <p class="text-gray-300 font-medium">Verified land titles</p>
-                                <p class="text-gray-500 text-sm">All properties come with clear documentation</p>
+                                <p class="text-black font-medium">Verified land titles</p>
+                                <p class="text-gray-700 text-sm">All properties come with clear documentation</p>
                             </div>
                         </div>
                         <div class="flex items-start">
@@ -399,8 +423,8 @@
                                 </div>
                             </div>
                             <div class="ml-3">
-                                <p class="text-gray-300 font-medium">Prime locations</p>
-                                <p class="text-gray-500 text-sm">Carefully selected for growth potential</p>
+                                <p class="text-black font-medium">Prime locations</p>
+                                <p class="text-gray-700 text-sm">Carefully selected for growth potential</p>
                             </div>
                         </div>
                         <div class="flex items-start">
@@ -410,8 +434,8 @@
                                 </div>
                             </div>
                             <div class="ml-3">
-                                <p class="text-gray-300 font-medium">Full support</p>
-                                <p class="text-gray-500 text-sm">From purchase to development planning</p>
+                                <p class="text-black font-medium">Full support</p>
+                                <p class="text-gray-700 text-sm">From purchase to development planning</p>
                             </div>
                         </div>
                     </div>
@@ -420,27 +444,32 @@
                     <div class="relative">
                         <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
                              alt="About Us" class="rounded-xl shadow-2xl w-full">
-                        <div class="absolute -bottom-6 -right-6 bg-navy-700 p-6 rounded-xl shadow-lg w-3/4">
-                            <h3 class="text-white text-xl font-bold mb-2 heading-font">Why Choose Us?</h3>
-                            <p class="text-navy-100 text-sm">
-                                Our expertise in land properties ensures you get the best value and guidance throughout your investment journey.
-                            </p>
-                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    <!-- Why Choose Us Section -->
+    <section class="py-12 bg-navy-900">
+      <div class="max-w-3xl mx-auto px-4 text-center">
+        <div class="bg-navy-700 p-8 rounded-xl shadow-lg inline-block animate-fade-in">
+          <h3 class="text-white text-2xl md:text-3xl font-bold mb-4 heading-font">Why Choose Us?</h3>
+          <p class="text-navy-900 text-base md:text-lg">
+            Our expertise in land properties ensures you get the best value and guidance throughout your investment journey.
+          </p>
+        </div>
+      </div>
+    </section>
 
     <!-- Testimonials -->
-    <section class="py-16 bg-dark-800 relative">
+    <section class="py-16 bg-white relative">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4 heading-font">
+                <h2 class="text-3xl md:text-4xl font-bold text-black mb-4 heading-font">
                     Client <span class="navy-gradient-text">Testimonials</span>
                 </h2>
                 <div class="w-24 h-1 bg-navy-600 mx-auto mb-6"></div>
-                <p class="text-gray-400 max-w-2xl mx-auto">
+                <p class="text-gray-700 max-w-2xl mx-auto">
                     Hear what our clients say about their experience with ProDev Real Estate
                 </p>
             </div>
@@ -452,8 +481,8 @@
                             <img class="h-10 w-10 rounded-full" src="https://randomuser.me/api/portraits/women/44.jpg" alt="Sarah J.">
                         </div>
                         <div class="ml-4">
-                            <div class="text-base font-medium text-white">Sarah J.</div>
-                            <div class="text-sm text-navy-400">Investor</div>
+                            <div class="text-base font-medium text-black">Sarah J.</div>
+                            <div class="text-sm text-navy-700">Investor</div>
                         </div>
                     </div>
                     <div class="text-gray-400 mb-4">
@@ -475,8 +504,8 @@
                             <img class="h-10 w-10 rounded-full" src="https://randomuser.me/api/portraits/men/32.jpg" alt="Michael T.">
                         </div>
                         <div class="ml-4">
-                            <div class="text-base font-medium text-white">Michael T.</div>
-                            <div class="text-sm text-navy-400">Developer</div>
+                            <div class="text-base font-medium text-black">Michael T.</div>
+                            <div class="text-sm text-navy-700">Developer</div>
                         </div>
                     </div>
                     <div class="text-gray-400 mb-4">
@@ -498,8 +527,8 @@
                             <img class="h-10 w-10 rounded-full" src="https://randomuser.me/api/portraits/women/68.jpg" alt="Jennifer L.">
                         </div>
                         <div class="ml-4">
-                            <div class="text-base font-medium text-white">Jennifer L.</div>
-                            <div class="text-sm text-navy-400">Homeowner</div>
+                            <div class="text-base font-medium text-black">Jennifer L.</div>
+                            <div class="text-sm text-navy-700">Homeowner</div>
                         </div>
                     </div>
                     <div class="text-gray-400 mb-4">
@@ -523,7 +552,7 @@
         <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80')] bg-cover bg-center opacity-10"></div>
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
             <div class="text-center">
-                <h2 class="text-3xl md:text-4xl font-bold text-white mb-6 heading-font">
+                <h2 class="text-3xl md:text-4xl font-bold text-black mb-6 heading-font">
                     Ready to <span class="navy-gradient-text">Invest</span> in Land?
                 </h2>
                 <p class="text-xl text-gray-300 max-w-3xl mx-auto mb-8">
@@ -582,7 +611,7 @@
     border-color: #1a3a8b;
     box-shadow: 0 0 10px #1a3a8b;
     background-color: #1a1a1a;
-    animation: pulse-glow 1s ease-in-out infinite alternate;
+    animation: pulse-glow 1s ease-in-out infinite;
   }
 
   @keyframes pulse-glow {
@@ -650,14 +679,17 @@
     document.body.appendChild(linkImg);
     linkImg.click();
     document.body.removeChild(linkImg);
-    // Download details as txt
-    const blob = new Blob([details], { type: 'text/plain' });
-    const linkTxt = document.createElement('a');
-    linkTxt.href = URL.createObjectURL(blob);
-    linkTxt.download = 'property-details.txt';
-    document.body.appendChild(linkTxt);
-    linkTxt.click();
-    document.body.removeChild(linkTxt);
+    // Download details as PDF
+    const {{ jsPDF }} = window.jspdf;
+    const doc = new jsPDF();
+    doc.setFont('helvetica', 'bold');
+    doc.setFontSize(16);
+    doc.text('Property Details', 10, 20);
+    doc.setFont('helvetica', 'normal');
+    doc.setFontSize(12);
+    const lines = doc.splitTextToSize(details, 180);
+    doc.text(lines, 10, 35);
+    doc.save('property-details.pdf');
   }
 
   const form = document.getElementById('contact-form');
@@ -679,6 +711,13 @@
       alert("There was an error. Please try again.");
     }
   });
+
+  function inquireAndClose(modalId) {
+    closeModal(modalId);
+    setTimeout(function() {
+        document.getElementById('contact').scrollIntoView({behavior: 'smooth'});
+    }, 300);
+}
 </script>
 <div class="mt-8 flex items-center justify-center gap-4 text-navy-400 border border-navy-600 px-6 py-4 rounded-md bg-black bg-opacity-60 shadow-md w-fit mx-auto">
   <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-navy-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -691,36 +730,36 @@
 
 
     <!-- Footer -->
-    <footer class="bg-dark-800 border-t border-navy-800/20 pt-12 pb-8">
+    <footer class="bg-white border-t border-navy-800/20 pt-12 pb-8">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
                 <div>
-                    <h3 class="text-lg font-bold text-white mb-4 heading-font">PRODEV<span class="navy-gradient-text"> REAL ESTATE</span></h3>
-                    <p class="text-gray-400 text-sm">
+                    <h3 class="text-lg font-bold text-black mb-4 heading-font">PRODEV<span class="navy-gradient-text"> REAL ESTATE</span></h3>
+                    <p class="text-gray-700 text-sm">
                         Premium land properties for discerning investors and homeowners seeking the finest locations.
                     </p>
                 </div>
                 <div>
-                    <h4 class="text-base font-bold text-white mb-4">Quick Links</h4>
+                    <h4 class="text-base font-bold text-black mb-4">Quick Links</h4>
                     <ul class="space-y-2">
-                        <li><a href="#" class="text-gray-400 hover:text-navy-400 text-sm transition duration-300">Home</a></li>
-                        <li><a href="#properties" class="text-gray-400 hover:text-navy-400 text-sm transition duration-300">Properties</a></li>
-                        <li><a href="#about" class="text-gray-400 hover:text-navy-400 text-sm transition duration-300">About Us</a></li>
-                        <li><a href="#contact" class="text-gray-400 hover:text-navy-400 text-sm transition duration-300">Contact</a></li>
+                        <li><a href="#" class="text-gray-700 hover:text-navy-400 text-sm transition duration-300">Home</a></li>
+                        <li><a href="#properties" class="text-gray-700 hover:text-navy-400 text-sm transition duration-300">Properties</a></li>
+                        <li><a href="#about" class="text-gray-700 hover:text-navy-400 text-sm transition duration-300">About Us</a></li>
+                        <li><a href="#contact" class="text-gray-700 hover:text-navy-400 text-sm transition duration-300">Contact</a></li>
                     </ul>
                 </div>
                 <div>
-                    <h4 class="text-base font-bold text-white mb-4">Properties</h4>
+                    <h4 class="text-base font-bold text-black mb-4">Properties</h4>
                     <ul class="space-y-2">
-                        <li><a href="#" class="text-gray-400 hover:text-navy-400 text-sm transition duration-300">Subdivided Lots</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-navy-400 text-sm transition duration-300">Portion Lands</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-navy-400 text-sm transition duration-300">Plain Lands</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-navy-400 text-sm transition duration-300">Featured Listings</a></li>
+                        <li><a href="#" class="text-gray-700 hover:text-navy-400 text-sm transition duration-300">Subdivided Lots</a></li>
+                        <li><a href="#" class="text-gray-700 hover:text-navy-400 text-sm transition duration-300">Portion Lands</a></li>
+                        <li><a href="#" class="text-gray-700 hover:text-navy-400 text-sm transition duration-300">Plain Lands</a></li>
+                        <li><a href="#" class="text-gray-700 hover:text-navy-400 text-sm transition duration-300">Featured Listings</a></li>
                     </ul>
                 </div>
                 <div>
-                    <h4 class="text-base font-bold text-white mb-4">Newsletter</h4>
-                    <p class="text-gray-400 text-sm mb-4">
+                    <h4 class="text-base font-bold text-black mb-4">Newsletter</h4>
+                    <p class="text-gray-700 text-sm mb-4">
                         Subscribe to receive updates on new properties and investment opportunities.
                     </p>
                     <form class="flex">
@@ -736,9 +775,9 @@
                     &copy; 2023 ProDev Real Estate. All rights reserved.
                 </p>
                 <div class="flex space-x-6">
-                    <a href="#" class="text-gray-500 hover:text-navy-400 text-sm transition duration-300">Privacy Policy</a>
-                    <a href="#" class="text-gray-500 hover:text-navy-400 text-sm transition duration-300">Terms of Service</a>
-                    <a href="#" class="text-gray-500 hover:text-navy-400 text-sm transition duration-300">Sitemap</a>
+                    <a href="#" class="text-gray-700 hover:text-navy-400 text-sm transition duration-300">Privacy Policy</a>
+                    <a href="#" class="text-gray-700 hover:text-navy-400 text-sm transition duration-300">Terms of Service</a>
+                    <a href="#" class="text-gray-700 hover:text-navy-400 text-sm transition duration-300">Sitemap</a>
                 </div>
             </div>
         </div>
@@ -855,7 +894,7 @@
                         </div>
                         
                         <div class="flex space-x-4">
-                                <a href="#contact" class="bg-navy-700 hover:bg-navy-600 text-white px-6 py-3 rounded-md font-medium transition duration-300 flex-1 text-center">
+                                <a href="#contact" class="bg-navy-700 hover:bg-yellow-400 hover:text-navy-900 text-white px-6 py-3 rounded-md font-medium transition duration-300 flex-1 text-center">
                               Inquire Now
                                  </a>
                                  <button onclick="downloadBrochure('https://scontent.fcrk1-5.fna.fbcdn.net/v/t39.30808-6/475263163_122123040314605860_7388368848718730168_n.jpg', 'Mangaldan Estate Lots\nLocation: Buenlag Mangaldan\nPrice: ₱2,500 PER SQM\nLot Size: 100 - 500 sqms\nFeatures: Approved plan, DOAS, Underground utilities, Architectural review, Landscaping requirements, CC&Rs')" class="border border-navy-600 text-navy-400 hover:bg-navy-900/30 px-6 py-3 rounded-md font-medium transition duration-300 flex-1 text-center">
@@ -959,7 +998,7 @@
                         </div>
                         
                         <div class="flex space-x-4">
-                            <a href="#contact" class="bg-navy-700 hover:bg-navy-600 text-white px-6 py-3 rounded-md font-medium transition duration-300 flex-1 text-center">
+                            <a href="#contact" class="bg-navy-700 hover:bg-yellow-400 hover:text-navy-900 text-white px-6 py-3 rounded-md font-medium transition duration-300 flex-1 text-center">
                                 Inquire Now
                             </a>
                             <button onclick="downloadBrochure('https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80', 'golden Plains Subdivision\nLocation: Austin, Texas\nPrice: ₱180,000\nLot Size: 0.25 sqm\nFeatures: Low property taxes, No HOA fees, Flexible building codes, Close to schools, 15 minutes to downtown, Mineral rights negotiable')" class="border border-navy-600 text-navy-400 hover:bg-navy-900/30 px-6 py-3 rounded-md font-medium transition duration-300 flex-1 text-center">
@@ -1062,7 +1101,7 @@
                         </div>
                         
                         <div class="flex space-x-4">
-                            <a href="#contact" class="bg-navy-700 hover:bg-navy-600 text-white px-6 py-3 rounded-md font-medium transition duration-300 flex-1 text-center">
+                            <a href="#contact" class="bg-navy-700 hover:bg-yellow-400 hover:text-navy-900 text-white px-6 py-3 rounded-md font-medium transition duration-300 flex-1 text-center">
                                 Inquire Now
                             </a>
                             <button onclick="downloadBrochure('https://images.unsplash.com/photo-1600566752227-8f55913b15b3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80', 'Oceanview Parcels\nLocation: Malibu, California\nPrice: ₱450,000\nLot Size: 100 - 500 sqms\nFeatures: 180-degree ocean views, Private beach access, Geotechnical reports available, Architectural review required, Minimum 3,500 sq.ft. homes, 20 minutes to Malibu Pier')" class="border border-navy-600 text-navy-400 hover:bg-navy-900/30 px-6 py-3 rounded-md font-medium transition duration-300 flex-1 text-center">
@@ -1080,49 +1119,17 @@
 <div id="customPropertyModal" class="modal fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center p-4 z-50 opacity-0 pointer-events-none transition duration-300">
     <div class="modal-content bg-dark-800 rounded-xl max-w-4xl w-full max-h-[90vh] overflow-y-auto">
         <div class="relative">
-            <button onclick="closeModal('customPropertyModal')" class="absolute top-4 right-4 text-gray-400 hover:text-white bg-dark-900 rounded-full p-2 z-10">
-                <i class="fas fa-times"></i>
-            </button>
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-0">
-                <div class="relative h-64 lg:h-full">
-                    <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80"
-                         alt="Sample Property" class="w-full h-full object-cover rounded-tl-xl rounded-tr-xl lg:rounded-tr-none lg:rounded-bl-xl">
-                    <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-6">
-                        <h3 class="text-2xl font-bold text-white heading-font">Sample Property</h3>
-                        <p class="text-navy-400"><i class="fas fa-map-marker-alt mr-2"></i> Sample Location</p>
-                    </div>
-                </div>
-                <div class="p-8">
-                    <div class="flex justify-between items-start mb-6">
-                        <div>
-                            <p class="text-gray-400 text-sm">Starting from</p>
-                            <p class="text-navy-500 text-2xl font-bold">₱999,999</p>
-                        </div>
-                        <div class="text-right">
-                            <p class="text-gray-400 text-sm">Lot Size</p>
-                            <p class="text-white">200 sqm</p>
-                        </div>
-                    </div>
-                    
-                    <div class="mb-6">
-                        <h4 class="text-lg font-bold text-white mb-3 heading-font">Property Details</h4>
-                        <div class="grid grid-cols-2 gap-4 mb-4">
-                            <div class="flex items-center">
-                                <div class="bg-navy-700/20 p-2 rounded-md mr-3">
-                                    <i class="fas fa-file-signature text-navy-500"></i>
-                                </div>
-                                <div>
-                                    <p class="text-gray-400 text-sm">Approved plan</p>
-                                    <p class="text-white">Available</p>
+            <button
+                         alt="Sample Property" class="w-full h-full object-cover rounded-tl-xl
                                 </div>
                             </div>
+                           
                             <div class="flex items-center">
                                 <div class="bg-navy-700/20 p-2 rounded-md mr-3">
                                     <i class="fas fa-tag text-navy-500"></i>
-                                </div>
-                                <div>
+                                                               </div>
                                     <p class="text-gray-400 text-sm">Sold</p>
-                                    <p class="text-white">5</p>
+                                    <p class="text-white">10</p>
                                 </div>
                             </div>
                             <div class="flex items-center">
@@ -1132,15 +1139,6 @@
                                 <div>
                                     <p class="text-gray-400 text-sm">Road Access</p>
                                     <p class="text-white">Concrete</p>
-                                </div>
-                            </div>
-                            <div class="flex items-center">
-                                <div class="bg-navy-700/20 p-2 rounded-md mr-3">
-                                    <i class="fas fa-city text-navy-500"></i>
-                                </div>
-                                <div>
-                                    <p class="text-gray-400 text-sm">Lots available</p>
-                                    <p class="text-white">10</p>
                                 </div>
                             </div>
                             <div class="flex items-center">
@@ -1173,7 +1171,7 @@
                     </div>
                     
                     <div class="flex space-x-4">
-                        <a href="#contact" class="bg-navy-700 hover:bg-navy-600 text-white px-6 py-3 rounded-md font-medium transition duration-300 flex-1 text-center">
+                        <a href="#contact" class="bg-navy-700 hover:bg-yellow-400 hover:text-navy-900 text-white px-6 py-3 rounded-md font-medium transition duration-300 flex-1 text-center">
                             Inquire Now
                         </a>
                             Download Brochure
